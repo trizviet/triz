@@ -1,0 +1,553 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en"><head>
+
+<meta charset="utf-8">
+<meta name="generator" content="quarto-1.3.433">
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+
+
+<title>triz4business – chap3</title>
+<style>
+code{white-space: pre-wrap;}
+span.smallcaps{font-variant: small-caps;}
+div.columns{display: flex; gap: min(4vw, 1.5em);}
+div.column{flex: auto; overflow-x: auto;}
+div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+ul.task-list{list-style: none;}
+ul.task-list li input[type="checkbox"] {
+  width: 0.8em;
+  margin: 0 0.8em 0.2em -1em; /* quarto-specific, see https://github.com/quarto-dev/quarto-cli/issues/4556 */ 
+  vertical-align: middle;
+}
+</style>
+
+
+<script src="site_libs/quarto-nav/quarto-nav.js"></script>
+<script src="site_libs/quarto-nav/headroom.min.js"></script>
+<script src="site_libs/clipboard/clipboard.min.js"></script>
+<script src="site_libs/quarto-search/autocomplete.umd.js"></script>
+<script src="site_libs/quarto-search/fuse.min.js"></script>
+<script src="site_libs/quarto-search/quarto-search.js"></script>
+<meta name="quarto:offset" content="./">
+<script src="site_libs/quarto-html/quarto.js"></script>
+<script src="site_libs/quarto-html/popper.min.js"></script>
+<script src="site_libs/quarto-html/tippy.umd.min.js"></script>
+<script src="site_libs/quarto-html/anchor.min.js"></script>
+<link href="site_libs/quarto-html/tippy.css" rel="stylesheet">
+<link href="site_libs/quarto-html/quarto-syntax-highlighting.css" rel="stylesheet" id="quarto-text-highlighting-styles">
+<script src="site_libs/bootstrap/bootstrap.min.js"></script>
+<link href="site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
+<link href="site_libs/bootstrap/bootstrap.min.css" rel="stylesheet" id="quarto-bootstrap" data-mode="light">
+<script id="quarto-search-options" type="application/json">{
+  "location": "navbar",
+  "copy-button": false,
+  "collapse-after": 3,
+  "panel-placement": "end",
+  "type": "overlay",
+  "limit": 20,
+  "language": {
+    "search-no-results-text": "No results",
+    "search-matching-documents-text": "matching documents",
+    "search-copy-link-title": "Copy link to search",
+    "search-hide-matches-text": "Hide additional matches",
+    "search-more-match-text": "more match in this document",
+    "search-more-matches-text": "more matches in this document",
+    "search-clear-button-title": "Clear",
+    "search-detached-cancel-button-title": "Cancel",
+    "search-submit-button-title": "Submit",
+    "search-label": "Search"
+  }
+}</script>
+
+  <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+  <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml-full.js" type="text/javascript"></script>
+
+<link rel="stylesheet" href="styles.css">
+</head>
+
+<body class="nav-fixed">
+
+<div id="quarto-search-results"></div>
+  <header id="quarto-header" class="headroom fixed-top">
+    <nav class="navbar navbar-expand-lg navbar-dark ">
+      <div class="navbar-container container-fluid">
+      <div class="navbar-brand-container">
+    <a class="navbar-brand" href="./index.html">
+    <span class="navbar-title">triz4business</span>
+    </a>
+  </div>
+            <div id="quarto-search" class="" title="Search"></div>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
+  <span class="navbar-toggler-icon"></span>
+</button>
+          <div class="collapse navbar-collapse" id="navbarCollapse">
+            <ul class="navbar-nav navbar-nav-scroll me-auto">
+  <li class="nav-item">
+    <a class="nav-link" href="./index.html" rel="" target="">
+ <span class="menu-text">Home</span></a>
+  </li>  
+  <li class="nav-item">
+    <a class="nav-link" href="./chap1.html" rel="" target="">
+ <span class="menu-text">Chapter 1</span></a>
+  </li>  
+  <li class="nav-item">
+    <a class="nav-link" href="./chap2.html" rel="" target="">
+ <span class="menu-text">Chapter 2</span></a>
+  </li>  
+  <li class="nav-item">
+    <a class="nav-link active" href="./chap3.html" rel="" target="" aria-current="page">
+ <span class="menu-text">Chapter 3</span></a>
+  </li>  
+</ul>
+            <div class="quarto-navbar-tools ms-auto">
+</div>
+          </div> <!-- /navcollapse -->
+      </div> <!-- /container-fluid -->
+    </nav>
+</header>
+<!-- content -->
+<div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-article page-navbar">
+<!-- sidebar -->
+<!-- margin-sidebar -->
+    <div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
+        <nav id="TOC" role="doc-toc" class="toc-active">
+    <h2 id="toc-title">On this page</h2>
+   
+  <ul>
+  <li><a href="#complex-systems-root-contradictions" id="toc-complex-systems-root-contradictions" class="nav-link active" data-scroll-target="#complex-systems-root-contradictions">Complex Systems &amp; Root Contradictions</a>
+  <ul class="collapse">
+  <li><a href="#a-crash-course-in-complex-systems" id="toc-a-crash-course-in-complex-systems" class="nav-link" data-scroll-target="#a-crash-course-in-complex-systems">A Crash Course In Complex Systems</a></li>
+  <li><a href="#first-principles" id="toc-first-principles" class="nav-link" data-scroll-target="#first-principles">First Principles</a></li>
+  <li><a href="#divergence-convergence-cycles" id="toc-divergence-convergence-cycles" class="nav-link" data-scroll-target="#divergence-convergence-cycles">Divergence-Convergence Cycles</a></li>
+  <li><a href="#cobra-process" id="toc-cobra-process" class="nav-link" data-scroll-target="#cobra-process">COBRA+ Process</a></li>
+  <li><a href="#cobra-case-study" id="toc-cobra-case-study" class="nav-link" data-scroll-target="#cobra-case-study">COBRA+ Case Study</a>
+  <ul class="collapse">
+  <li><a href="#do-all-the-stakeholders-perceive-a-win" id="toc-do-all-the-stakeholders-perceive-a-win" class="nav-link" data-scroll-target="#do-all-the-stakeholders-perceive-a-win">Do all the stakeholders perceive a win?</a></li>
+  </ul></li>
+  <li><a href="#contradiction-hierarchies-root-contradictions" id="toc-contradiction-hierarchies-root-contradictions" class="nav-link" data-scroll-target="#contradiction-hierarchies-root-contradictions">Contradiction Hierarchies &amp; Root Contradictions</a></li>
+  </ul></li>
+  </ul>
+</nav>
+    </div>
+<!-- main -->
+<main class="content" id="quarto-document-content">
+
+
+
+<section id="complex-systems-root-contradictions" class="level1">
+<h1>Complex Systems &amp; Root Contradictions</h1>
+<p>“If a factory is torn down, but the rationality which produced it is left standing, then that rationality will simply produce another factory. If a revolution destroys a government, but the systematic patterns of thought that produced that government are left intact, then those patterns will repeat themselves… there’s so much talk about the system. And so little understanding.”</p>
+<p>Robert Pirsig, Zen &amp; The Art Of Motorcycle Maintenance</p>
+<p>“Some problems are so complex that you have to be highly intelligent and well-informed just to be undecided about them.”</p>
+<p>Laurence J Peter</p>
+<section id="a-crash-course-in-complex-systems" class="level2">
+<h2 class="anchored" data-anchor-id="a-crash-course-in-complex-systems">A Crash Course In Complex Systems</h2>
+<p><strong>Figure 30 Complex Systems In Action: A Murmuration Of Starlings</strong></p>
+<p>One of my favourite experiences in the whole world is watching a murmuration of starlings (Figure 30). Half a million small birds flying in spectacular close formation before they roost for the night, creating an ever changing pattern in the sky. Not only is it beautiful to watch, it’s also a terrific example of a complex system in action. No-one (including the starlings themselves) can predict what the shape of the murmuration will look from one moment to the next. The overall shape of the murmuration is what complexity scientists would describe as ‘emergent’.</p>
+<p>Emergence is a key property of any complex system. Here’s a list of some of the other important characteristics of complex adaptive systems, as may be relevant to the context of problem solving and innovation :</p>
+<ol type="1">
+<li><p>There is no definitive formulation of ‘the problem’… you don’t understand it till you solve it</p></li>
+<li><p>There is no end to the problem</p></li>
+<li><p>Solutions are not true-or-false, but merely ‘good’-or-‘bad’</p></li>
+<li><p>There is no immediate and no ultimate test of a solution to the problem. Every instant of the problem is essentially unique (‘you can never step in the same river twice’)</p></li>
+<li><p>Every solution to the problem is a ‘one-shot operation’; because there is no opportunity to learn by trial-and-error, every attempt counts significantly</p></li>
+<li><p>There is not an enumerable set of potential solutions, nor is there a well-described set of permissible operations that may be incorporated into a plan</p></li>
+<li><p>The problem is a symptom of another problem.</p></li>
+<li><p>The existence of discrepancies when representing the problem can be explained in numerous ways – there is no such thing as ‘the root cause’</p></li>
+<li><p>Small discrepancies in understanding or modelling of the system can quickly get magnified into extreme differences in outcome (the apochrypal butterfly flapping it’s wings and causing a hurricane, and pretty much any attempt to predict weather)</p></li>
+<li><p>The choice of explanation determines the nature of the problem’s resolution</p></li>
+<li><p>Every complex system ‘emerges’ from the interaction of one or more basic underlying principles (‘levers of influence’/‘DNA’). The more complex the problem, the more hierarchical levels of these underlying principles there are likely to be.</p></li>
+<li><p>The quality of the solution is determined by the proportion of ‘all’ the underlying principles that are understood and have been incorporated into the solution model (‘Only variety can absorb variety’)</p></li>
+<li><p>The connections between the things in the system are more important than the things.</p></li>
+<li><p>The ‘best’ way to solve a complex problem is to make modification at the principle level.</p></li>
+</ol>
+<p>In the case of the starling murmuration the underlying principles from which the overall shape and pattern emerges is quite simple. There is no controlling starling with a master plan, there is simply a heuristic ‘fly as close to your neighbours as possible’ being enacted by each and every starling. Watch a murmuration for a while and you notice that there are never any impacts. Try and focus on one single starling and you’ll start to see how it applies the simple ‘stay as close as possible’ ‘rule’ and how tiny variations in their distance serves to trigger enormous changes in the shape of the overall murmuration.</p>
+<p>If murmurating starlings illustrate emergence in action from a relatively simple heuristic, mathematician Benoit Mandelbrot went a whole world further when he first published pictures of what we now know as the Mandelbrot Set. Amazing levels of complexity all arising from some apparently benign and extremely simple mathematics – <span class="math inline">\(f(z) = Z^2 + C\)</span>. How could it possibly be that such simplicity could produce such hypnotic beauty?</p>
+<p><strong>Figure 31 Mandelbrot Set</strong></p>
+<p>The Mandelbrot Set kind of looks like nature, but actual nature is where we need to head in order to find the most amazing illustrations of emergent behaviour. One of the most remarkable nature-made structures is the termite mound. Amazing structures, sometimes several metres high, built by hundreds of thousands of termites, with, again, no master plan.</p>
+<p><strong>Figure 32 Termite Mounds - Australia</strong></p>
+<p>Termites are small and their brains even smaller, so the instructions they are able to follow are relatively simple. Not quite so simple as ‘fly as close to your neighbour as possible’, but not by much. Termite mounds emerge from a set of ‘rules’ that look something like this:</p>
+<p>If Queen pheromone level exceeds threshold, go collect material Walk around randomly; if you find useful material pick it up; if you find other useful material, put what you have down.</p>
+<p>If temperature or oxygen level inside the mound drops below a comfortable level, block exit and entrance holes; if temperature or oxygen level exceeds a comfortable level, clear the exits and entrances.</p>
+<p>If unexpected holes appear; fill them</p>
+<p>And that’s pretty much it.</p>
+<p>Every termite mound emerges to be completely unique, but at the same time, they’re all pretty much the same. And they will be continue to be so as long as termites keep applying the same basic principles.</p>
+<p>If we wished to encourage termites to make a ‘better’ mound, the way to do it would be to change those principles. Any other means of altering the design of a mound wouldn’t work – the termites would simply keep applying their already established rules and the mound as we know it today would consistently ‘re-emerge’. Take a chainsaw and lop the top off a mound, and within a very short while it will magically re-appear.</p>
+<p>The ultimate point here is that whenever we (humans) attempt to change a complex system by any other means that changes to the underlying ‘’DNA’ principles, the system will always naturally return to its original state. We see this in action with the large majority of change initiatives inside organisations: a wilful manager decides they want to (say) create an ‘innovation culture’ across the business and then try and bludgeon everyone into complying with their desire. If they’re lucky, they might get some actual useful innovative output for a while, but if they haven’t understood or made the change happen at the ‘DNA’ level, very soon after they depart for pastures new, the system will revert to its previous un-innovative state.</p>
+<p>Even when we try and change a system at the principle level, in the majority of cases, we end up with a mutated system that is worse than it was before. We can observe a very simple example of a ‘principle-level’ change in a starling murmuration if a hungry falcon happens to turn up. Add a falcon to the murmuration and the ‘fly as close to your neighbour as possible’ heuristic very quickly gets replaced by another rule: ‘get away from the falcon’. Add the falcon to the system and the beautiful display of mass aerobatics quickly turns into a chaotic mess of starlings flying into one another.</p>
+<p><strong>Figure 33 Tipping The Complex System Into Chaos – Arrival Of Bird Of Prey</strong></p>
+<p>A big part of the SI research is trying to get to an understanding of how complex systems – like ‘society’ – work at this ‘principle’ level. TrenDNA, for example, has DNA in its title because our aim was to uncover the underlying principles that influence and drive why systems emerge in the way they do. The Strauss and Howe ‘generation cycle’ theory and the underpinning ‘DNA’ idea that society emerges from the way in which parents raise their children and how, for each generation, the choices a parent makes are in turn influenced by how they were raised by their parents. There is no absolute rule that says society has to go through a crisis period every four generations, but merely that, so long as this parental influence ‘DNA’ remains present in the way it is, it’s very likely we’ll keeping seeing the same four generation archetype picture emerging and re-emerging.</p>
+<p>Trying to innovate in this kind of complex environment, we propose, fundamentally means altering the system at this principle level, and, moreover, doing it in such a way that, unlike what happens when we add a falcon to a murmuration, we find a change or combination of changes that somehow cause the system to emerge in a manner that is fundamentally better. There’s no rule that says society ‘has to’ enter a crisis period every four generations, but we’ll only ever successfully avoid periodic crises if we manage to somehow alter the parent-child influence model in some way. And, moreover, to do it in such a manner that we avoid the human equivalent of falconry.</p>
+<p>We might go so far as to say that innovation only really has the chance to happen when we are able to make changes at the core ‘first principle’ level. Put another way, if we don’t understand what the principles from which our current system has emerged, our chances of innovation success are diminishingly small. Which means, we think, that the key question for any prospective innovation team, when they’re thinking about ‘what don’t we know yet?’ is how well we do or don’t know what the underlying principles – the <span class="math inline">\(f(z) = Z^2 + C\)</span> – of our system are.</p>
+<p>Spend a few moments thinking about whether you think you might know what the underlying first principles are for a system you’re currently responsible for improving, and we suspect you’ll quickly begin to see why such a large proportion of innovation attempts end in failure. It’s not supposed to be a scary thought, but it probably is anyway. Call that an underlying principle.</p>
+<p>And here’s another one, lest you be wondering whether this complexity stuff has any relevance to you and your work at all. There are a number of ways of establishing whether a system has veered into ‘complex’ territory, some of them involving some quite sophisticated mathematics. When we’re thinking about business systems, fortunately, we can avoid the necessity for such sophistication by bearing in mind the following heuristic: ‘if the system involves two or more humans, it is complex’.</p>
+</section>
+<section id="first-principles" class="level2">
+<h2 class="anchored" data-anchor-id="first-principles">First Principles</h2>
+<p>There’s an oft used aphorism, usually attributed to American satirist, H.L. Mencken, which goes, ‘for every complex problem there is an answer that is clear, simple and wrong.’ Like a lot of aphorisms it focuses more on flowing wordplay than absolute truth. Here’s how we think it might be re-phrased to better reflect the realities of actual complex systems: ‘For every complex problem there are thousands of clear, simple, wrong answers. For every complex problem there is a clear, simple, right one. If we understand and affect the first principles’.</p>
+<p>Perhaps one of the best things about ‘first principles’ is that, by definition, there aren’t that many of them. They say that the sum total of mankind’s knowledge is doubling in less than a year these days. That’s a scary thought for some. Mainly educators, who we hear routinely saying that its no longer possible to fit everything into the curriculum anymore. Somewhat tragically, one of the early things to have been squeezed out of the curriculum to make room for all this new knowledge has been teaching things from a first principles level. There’s a cruel irony in this omission: if we look at the world from this first principles level, we quickly come to realise that an awfully large percentage of the so-called ‘new knowledge’ is the exact same as the old knowledge. It is, in other words, ‘noise’. Teachers and lecturers, it now seems, spend their time teaching students noise. This has been going on for two generations now. Meaning that, unless something is done about it, society will quickly find itself in the situation where the teachers themselves will never have been taught the importance of understanding how the world works from the first principles level. That’s probably called ‘the blind leading the blind’.</p>
+<p>Although the original Soviet TRIZ researchers never (as far as I know) thought about what they were doing in terms of ‘first principles’ research, the reality is that that is precisely what they were revealing. The 40 Inventive Principles being an absolute case in point. Our evolution beyond the initial research means we’ve now been able to analyse nine million pieces of ‘new knowledge’ (e.g.&nbsp;patents and management texts), only to find that there are still only forty effective ways to resolve a conflict.</p>
+<p>One way of thinking about the TRIZ bigger picture, and especially it’s ‘systematic innovation’ successors is that they’ve come to represent a global compendium of first principles. We maintain our research team because we know that the job of unearthing the ‘DNA’ of how things work is not yet complete. But we also know that the return on time invested is diminishingly small. Internet content might indeed be doubling every few weeks or months, but our collective ‘first principles level’ wisdom advances at a much more manageable, can we say, glacial pace.</p>
+<p>Solving a conflict problem well will inevitably mean that we’ve made use of at least one, and probably a combination of several Inventive Problems. But, just because we’ve used the Principles doesn’t necessarily mean we have tackled and affected the conflict at the first principle level.</p>
+<p>In turn, where this starts involves us making a distinction between right-versus-wrong and right-versus-right situations. Contradictions can appear if two people have a different opinion about a situation, one of which is a difference built on the fact that one of the two is wrong, and the other – more interesting – where both are right. This right-versus-right situation (‘you want equality, I want equity’, for example) offers up the biggest opportunity for ‘first principle’ breakthrough if we’re able to somehow break the contradiction. Right-versus-right situations are important enough, we first surmised in Reference 29, to benefit from a more granular definition.</p>
+<p>One distinction which seems to be useful is that between the tangible and the intangible (i.e.&nbsp;emotional). Useful in the sense that it’s highly plausible that a person can be scientifically right about a situation and simultaneously be wrong emotionally (think Richard Dawkins). Figure 33 is an attempt to describe the four scenarios that emerge when we split the tangible and intangible, right and wrong:</p>
+<p><strong>Figure 34 A Tangible/Emotional Right/Wrong Domain Map</strong></p>
+<p>Both dimensions are probably best thought of as a continuum. There are degrees of ‘right’ness in the same way that there are degrees of ’wrong’ness relating to a situation. In a scientific sense, we often hear the aphorism, ’all theories are wrong, but some are useful’. In the emotional domain, the distinction between right and wrong is likely even more nebulous. In which case the border between ‘right’ and ‘wrong’ drawn onto the figure is perhaps more theoretical than practical. Although, that said, the boundary between the two is often a matter of degree rather than an absolute. Most people, for example, would agree that democracy is ‘better’ than dictatorship as a form of government, but almost everyone has a different position along a left/right political spectrum that they would vote for as the ‘right’ form of democracy.</p>
+<p>Fortunately, the degree of rightness is not nearly so important an issue as that of identifying and solving contradictions. Arguing about Democrat or Republican is ultimately a futile exercise. Treating the Democrat-Republican difference as a contradiction to be solved would be a much more fruitful use of all of our – and our elected politicians’ – time.</p>
+<p>The Figure 33 domain map, then, offers up a way to help examine different types of contradiction. If we can imagine placing two individuals’ points of view ‘A’ and ‘B’ about a situation somewhere on the map it ought to be possible to imagine stronger contradiction solution strategies. That topic is the primary focus of Reference 29. As far as our ‘affecting the system at the first principle level’ requirement is concerned, the only combination that need interest us here is the one where both person A and person B are in the top-right hand quadrant of the figure.</p>
+<p>The only thing we need to add to that requirement, then, is to ensure we’re operating at the first principle level. From the ‘tangible’ perspective, this means focusing on the outcomes the two parties are looking to achieve. And from the intangible perspective it largely distils down to the ABC-M model described earlier. If a desired increase in, say, your Competence, adversely affects my Autonomy, then there’s the first-principle conflict that needs to be addressed.</p>
+<p>Finally, if we’ve managed to intrigue you into the wider world of ‘first principles’, we’ve made a first attempt to compile ‘all’ of them in Reference 30. One day, it feels like that first attempt might turn into another book…</p>
+</section>
+<section id="divergence-convergence-cycles" class="level2">
+<h2 class="anchored" data-anchor-id="divergence-convergence-cycles">Divergence-Convergence Cycles</h2>
+<p>The second significant implication of the complex adaptive system traits of effectively all business situations is the preclusion of ‘efficient’ solutions. Efficiency has long been a goal of problem solvers. We can observe the greatest level of success in this direction in the world of operational excellence. This is the world where high efficiency pays the greatest dividends. Any time lost to investigation of problems and to their solution is time that ought to have been devoted to creating more output, and so problem solvers working in this domain have gone to extraordinary mathematical lengths (e.g.&nbsp;Taguchi Methods) to strip ‘waste’ out of the process. We can see similar attempts, albeit not so successfully deployed, from within the technical TRIZ world, and particularly with methods like ARIZ. Success in the TRIZ world has been lower, one suspects, because when we find ourselves working on ‘wicked problems’ of any type, chances are we’re in the world of complex adaptive systems. It is difficult to be ‘efficient’ in this world because, as described earlier, there is no such thing as a ‘root cause’, and because there’s no such thing either as the ‘silver bullet’ solution. Revealing problems and their solutions in the complex world is much more like the job of a murder-mystery novel detective. A world in which our job is to uncover a critical mass of clues such that we are able to piece together a coherent explanation of who committed the murder. Clue-finding is all about exploration and lateral jumps, it’s about heading down dead-ends that you don’t know are dead until you get to the end, and false trails that you can’t know are false until potentially several weeks or months later.</p>
+<p>Edward DeBono was the first person to teach us about the importance of ‘designing’ our way through complex situations and the consequent need for ‘exploration’. He is to all intents and purposes the founder of divergent and convergent thinking. And because he’s also the de facto father of Design Thinking, that means divergent-convergent thinking is also central to the underpinning ‘methodology’ it is today built around.</p>
+<p>In De Bono’s terms, divergence is all about broadening our array of alternatives, and convergence is all about consolidation and deciding from the revealed alternatives. In any complex problem situation there needs to be a minimum of two divergent-convergent cycles: the first concerned with doing the best job we can to explore options and find the ‘right’ problem, and the second to do the best job we can to explore potential solutions and to determine the most appropriate one(s) for us to pursue. Figure 34 summarises the two ‘double-diamond’ divergent-convergent cycles:</p>
+<p><strong>Figure 35 ‘Double-Diamond’ Divergent-Convergent Complex Problem Protocol</strong></p>
+<p>In reality, there may well be many more than two of these divergent-convergent cycles, but fortunately, if there are more, they will essentially be a repeat of the two cycles shown in the Figure. In effect, the double-diamond wraps around on itself, such that, having found the ‘best’ solution, we may choose to take it back around to the beginning of the problem definition divergent phase again, to explore what the potential problems with this solution might be.</p>
+<p>When Operational Excellence people tend to describe designers as ‘procrastinators’ for their seeming inability to make decisions, they might offer a hint why we’re mentioning this divergence-convergence characteristic at all: good designers know that, in a complex environment, one more iteration is rarely going to do harm, and will most likely pay dividends in reduction of wasted effort later on (see the ‘designer casts the biggest shadow case study at the end of the previous section of the book). Not only will designers willingly go around the loop again, they have also trained themselves to also do the divergent parts of the process to an extreme level. Usually one that, again, can easily frustrate the will to live from Operational Excellence people. To them ’exploration’ is strongly equated to waste. ‘Why spend all that time generating hundreds of solutions,’ we will often hear them say in an ideation session built around some of the Inventive Principles, ‘when you’re eventually just going to use one or two?’ In Operational Excellence world, the question makes a lot of sense. In the world of complex problems it makes no sense at all. But the world of business is at a point in its evolution where more ‘successful’ managers and leaders have been successful by being operationally excellent and not by thriving in complex environments. This section is ultimately here as a warning to business conflict solvers: people who will very likely still be in the early stages of problem exploration, when everyone else in their problem solving session is already pulling their hair out because the problem ‘isn’t solved yet’. Call that a conflict begging to be solved on a whole other level (although the Business Matrix will – of course – provide guidance!). One solution – if we’ve done our job well – is to obscure ‘the waste’ in an efficient-yet-complexity-embracing process called COBRA+. Another is to hope that awareness of the problem is more than halfway to providing the solution: Exploration isn’t waste it’s your future success. Iteration isn’t waste either, it’s the thing that will stop you wasting hundreds of thousands testing ‘solutions’ that another thirty minutes of patient iteration would have told you weren’t nearly good enough yet.</p>
+</section>
+<section id="cobra-process" class="level2">
+<h2 class="anchored" data-anchor-id="cobra-process">COBRA+ Process</h2>
+<p>As we’ve effectively now heard, every business problem is inherently complex. And inherently needs to address intangible ‘emotion’ issues. Solving complex problems necessitates getting the problem back to a first principles level. The overall Systematic Innovation and TrenDNA processes are intended to help problem solvers do exactly that. The downside of both processes is they demand a certain learning overhead. An overhead that circumstances may mean is unacceptable. The COBRA+ process is intended to fill the gap. It too ensures problem solvers tackle the issues they’re trying to address back to the first principles level. Figure 35 describes the basic steps of the process:</p>
+<p><strong>Figure 36 COBRA+ Overall Process</strong></p>
+<p>The process is also template-based in order to best enable problem solvers to work through a logical complexity-embracing sequence of steps. The overall process forms a cycle, and as such, allows a problem solver to undertake as many iterations as might be necessary to achieve an ‘appropriate’ solution. The test for what might be classed as ‘appropriate’ is contained within the process.</p>
+<p>A first iteration around the COBRA+ cycle typically begins with C for Compass.</p>
+<p>Compass is all about making sure we know where we’re heading. Irrespective of where we think we should be heading, TRIZ tells us that all successful solutions head towards an ‘Ideal’ end state in which all the intended stakeholders receive all the outcomes they’re looking to achieve with no negative consequences. Put into lay-person terms, every system evolves to a ‘free, perfect and now’ evolutionary end point. As may be expected, this end point is more theoretical than practical. From a practical perspective it will typically entail solutions that deliver useful functions ‘by themselves’: the ideal software updates itself; the ideal team manages itself; the ideal advertisement targets itself, and so on. The usual manner of interpreting the Compass part of COBRA+ is to encourage problem solvers to think about the ultimate ‘ideal’ solution, and then the pragmatic ‘ideal’ we wish to achieve in the current scenario.</p>
+<p>Next up comes O. O is for Outcomes. As discussed earlier in the book, when we’re discussing situations involving humans and we’re thinking about ‘outcomes’, we need to consider both tangible and intangible sides of the story. If we’re smart we should also think about what each of the different stakeholders present within a situation are looking to achieve, and what the people around those stakeholders are trying to achieve. Then, as if we’re not already making life difficult for ourselves as problem solvers, we also need to consider how those outcome needs alter at different stages of the story. The FMCG sector spends a lot of time thinking about ‘Moments of Truth’, critical moments when, in their case, consumers make decisions about the products being sold to them. In their world, there are basically two Moments of Truth – number one, did the consumer select their product off the supermarket shelf, and number two, when they got the product home and used it, did it work? In other industries, the number and type of Moments of Truth is likely to be rather more complex. The COBRA+ outcome-mapping job, if we’re to do it right, requires us to identify the tangible and intangible outcome needs of each of the stakeholders at each of the Moments of Truth. Taken to the first principles level, the job is easy, and we simply fill out this template:</p>
+<p><strong>Figure 37 Outcome Map</strong></p>
+<p>The time-consuming part is creating one of this tables for each stakeholder at each Moment of Truth. So that we end up with something like the image shown in Figure 37.</p>
+<p>Next up comes B for ‘But’. Here’s the part of the process where we deliberately force ourselves to run towards the things that will prevent us from achieving all the things we’ve identified we wish to achieve in the previous C and O stages of the process. ‘But’ is a shortcut for ‘yes, But’. Or we could call it ‘Barriers’. It’s about identifying all of the things that we perceive might prevent us from achieving a successful solution. Here’s the first part of the COBRA+ process where we explicitly start to think about complexity and complex adaptive systems. Normally (i.e.&nbsp;if we hadn’t accepted our business challenge was a complex one) we would be encouraged to go and find the ‘root cause’ of our problem. Once we accept that a situation is complex, we have to accept that there is no such thing as a root-cause. The links between cause and effect in a complex system are often remote and interconnected. The strong likelihood is that the outcomes our system currently delivers are emergent and that what they emerge from is a ‘conspiracy of causes’.</p>
+<p><strong>Figure 38 Overall Outcome Landscape</strong></p>
+<p>Once we’ve identified all of the ‘yes, but’s’ preventing us from achieving the outcomes we want (versus the ones we might currently be getting), the heart of the ‘B’ stage of COBRA+ involves us mapping the relationships between each of the ‘yes, but’ statements we’ve been able to identify. Here’s another important feature of complex systems: it’s not so much the things that determine the behaviour of the system as it is the relationships between the things. The way the process works here is we map the ‘betweens’ by asking the question ‘which of the other ’yes, but’ perception statements does this one lead to?’ We need to answer this question for each of the ‘yes, but’ perceptions we’ve been able to list. Then we can draw a map of what we’ve done. The map should end up looking something like this:</p>
+<p><strong>Figure 39 Typical Perception Map</strong></p>
+<p>..which can appear a little intimidating at first (although this particular map is for a somewhat more complex problem than most). What will inevitably appear, however, is at least one loop. And because the map has been constructed based on a list of ‘yes, but’ statements, those loops (actually only one in this example – in other situations, there may be more) will define the vicious cycle (or cycles) that are preventing us from achieving our desired outcomes. At this point we have found something important: the critical part of the ‘conspiracy of causes’ that will prevent us from getting to where we need to be. Actually, we’ve also identified something else that may turn out to be important. Looking at the above map, notice the box ‘Q’ which has multiple arrows pointing to it. This is what we call a ‘Collector’. It is one of the important things ‘driving’ the vicious cycle. If we combine the idea of loops and collectors, we can also notice that the boxes labelled ‘simple truths beat complex lies’, ‘Brexiteers more passionate’ and ‘Big Beasts’ are not only in the vicious cycle loop, but they’re also Collectors. This is trying to tell us that, as we transition from problem definition to solution generation, these are the most important areas for us to focus our attention on. In a complex situation, everything is, of course, connected to everything else, but nevertheless, when we’re looking to change the system (hopefully for the better), we need to start somewhere. This ‘yes, but’ map is designed to navigate us to those places.</p>
+<p>We still haven’t solved anything at this stage in the process, but we do now know what the important problems are, so we can begin the transition to solution. This brings us to the R part of COBRA+. R stands for Resources. The job in this part of the process, then, is to make a search for anything (knowledge, things, processes, people, measures, etc) that is either in or around our current system that we might be able to bring to bear to help us to improve the system. In theory, this is the simplest part of the process. In practice it can often require us to do some deep thinking about what we already have that we might not recognise we have. The best heuristic to keep in mind when making this search for Resources is that any time we allow ourselves to add something new to a system, we’ve just made it worse. In that we’ve taken it further away from the ‘Ideal’ we identified in the C-stage of COBRA+. Here’s another heuristic: 99 times out of a hundred, the resources needed to solve the problem are already there in or around our system, they just haven’t been recognised as resources. Or – important point – they have been things that we’ve viewed as harmful things rather than things that will help us to get to where we want to be. Lack of money, competitors and the person that arrives at meetings apparently intent on disrupting everyone are all things that are easily classifiable as negative things, but as far as our search for Resources is concerned, they’re also likely to be some of the best opportunities we will have to solve our problem.</p>
+<p>Now we arrive at A for ‘And’. This is the part of COBRA+ where we do all of the heavy-lifting in terms of solution generation. There are numerous way to do this idea generation job. The simplest, now the C, O and, particularly, B stages have told us where we’re trying to get to and what’s stopping us, is to simply brainstorm solution ideas. The next simplest is to look to the world of TRIZ and this book and make use of the 40 Inventive Principles. The most effective way is to make use of the Business Matrix that makes up the heart of this book. It’s job is to identify the most likely of those 40 Principles for our particular situation. The ‘And’ process, therefore, makes use of the Conflict Abstraction Template (CAT) shown earlier in Figure 11. The way we start the job of using this template is to equate the ‘thing we’re trying to improve’ box at the top left of the picture to our Compass ‘ideally’ statement. And the thing stopping us are the most important of the ‘yes, but’ perceptions as defined by the ‘yes, but’ map from the ‘B’ stage of the process. Once we’ve translated this ‘specific problem’ into the generic improving and worsening parameters offered down the sides and across the top of the Matrix, we can start looking up the relevant Inventive Principles at the intersections between the relevant rows and columns. Then, when we have these Principles, we can begin generating a list of ‘And’ solution clues. In true TRIZ (and Design Thinking ‘divergence’) fashion, our target here is to generate as many solution clues as possible. The SI team in-house heuristic is ‘diverge until it hurts’. As a minimum, we force ourselves to generate at least five clues from each of the offered Inventive Principles. If we’re feeling particularly motivated, the five will become ten. Or twenty. There’s rarely a downside to generating ‘too many’ ideas. Forcing ourselves to generate lots of ideas forces us to put aside consideration of the quality of those ideas and to get ‘out of the box’ and start thinking about more radical solution directions. The ultimate idea being that, once we start the process of converging on the solutions we might actually consider taking forwards, we will be looking at combinations of the solution clues we’ve generated. A radical clue on its own is rarely going to give us a ‘silver bullet’ solution, but a radical clue in combination with some of the other clues, is very likely to give us the breakthrough we’re looking for. The ‘And’ process is largely a divergent one, but after we’ve ‘diverged ’til it did indeed hurt’, there’s a need to start doing the convergent job of identifying the solution clues (and combinations thereof) that will give us a first insight into how we’re going to solve our problem.</p>
+<p>This, finally, takes us to the ‘+’ stage of COBRA+. This is the place we close the loop back to the initial Compass heading we defined. It is all about examining the appropriateness of the insights and solutions that have emerged from the ‘And’ solution generation stage. ‘+’ is all about the comparison of where we trying to get to versus where our new solution has got us. It’s the place where we decide whether we need to go through the whole COBRA process another time, or whether the solutions we have are ‘good enough’. There are a number of criteria that ‘+’ expects problem solvers to examine in order to make the decision about whether we’re finished or whether we need to do more work. The typical ‘+’ questions are:</p>
+<p><strong>Figure 40 Typical ‘+’ Stage Loop-Closing Questions</strong></p>
+<p>If the answer to any of them is ‘no’, then we really ought to go back to ‘C’ and conduct another iteration, either refining our initial Compass heading, or re-defining the problem in terms of where we are experiencing our ‘no’. A likely scenario for example, is that we enter the ‘+’ stage of the process with a solution that we think is the best thing we’ve ever dreamed up in our lives, but, unfortunately, when we are forced to think about the question, ‘do we possess a critical mass of resources to successfully execute the solution?’ we realise we do not. Now the new problem is either a new Compass heading that focuses on how we might acquire that critical mass of resources, or how we rethink our beautiful solution such that it is achievable with our existing resources.</p>
+<p>If we’re operating in true Design Thinking mode, there is no limit to how many times we might find ourselves looping around this COBRA+ process. In reality, what we’re doing is very brain-intensive and therefore energy-sapping. The heuristic in the SI team when we’re working on real problems is ‘go around the loop once and get a ’good’ solution; force yourself to go around a second time and you get a ‘great’ solution’. Ultimately, it all depends on how much time and energy you have, recognising too, that in a complex environment, you can’t ‘know’ what the right solution is until you’ve tested it with your full spectrum of stakeholders. And, again in Design-Thinking and ‘minimum viable demonstration’ modes, you’re looking to do that as soon as you possibly can. I.e. the stakeholders are the ultimate arbiters of the first ‘+’ question of ‘is the solution good enough?’ and they can only meaningfully answer that question when we’ve given them something to play with.</p>
+</section>
+<section id="cobra-case-study" class="level2">
+<h2 class="anchored" data-anchor-id="cobra-case-study">COBRA+ Case Study</h2>
+<p>As with many things in life, it is often easier to grasp a process by seeing a tangible example rather than by reading abstract theory. This in turn offers up a new problem: how to describe a meaningful business case study without devoting multiple pages to describing the context? Well, one way is to reference a case study so that anyone desperately interested in the specifics of the case rather than how the COBRA+ process might help us to bring clarity and insight. Reference 31 does that job. For everyone else, the bare minimum context information follows:</p>
+<p>The problem involves a specific exemplar of a generic problem: how to introduce the right measures and incentives into a system in order to deliver the right outcomes. The specifics of the situation in this case involve the higher education sector, where, following the introduction of a series of incentives a few years ago, it has rapidly become apparent that the intended outcomes and the actual outcomes were wildly different. The difference reveals another generically applicable finding: when people are subjected to dumb measures, they start treating them as targets, and the system becomes corrupted. People stop being honest actors and start playing games to ensure they personally ‘win’. The overall intent of the original incentives was to increase ‘true scientific productivity’ – i.e.&nbsp;to encourage academics to do more effective research more efficiently. The following table, extracted directly from the Reference 31 paper, illustrates the incentives, the intended effects and the actual outcomes.</p>
+<p><strong>Table 2: Growing Perverse Incentives In Academia</strong></p>
+<p>With this initial situation as the focus, we can begin to explore the use of COBRA+ as a means of moving the current dysfunctional, corrupted state into – hopefully – a better one. The first stage of the process is C for Compass. This stage is all about making sure we know where we’re heading. The template sheet asks problem solvers to define a long term and a nearer term ‘pragmatic’ Ideal end goal. Here is an example of what the completed template might look like in this situation:</p>
+<p><strong>Figure 41 Completed Compass Template For Exemplar Case Study</strong></p>
+<p>For the ultimate Ideal end state, it is always useful to think about and try to incorporate the word ‘self’ into the definition. In this case, we could have stated that the Ideal was that the research ‘conducted itself’, which might be a possible goal, albeit one that would appear on the face of it to be quite threatening to the academic world. It would nevertheless have been a legitimate statement to make since, at some point in the long term AI-filled future, the research inevitably will be done ‘by itself’. But in this instance, because the focus is on the system of incentives, the decision was made to define the end state as ‘self-organising’. Both definitions would have been valid and it is up to the problem solver or problem-solving team to decide what their level of ambition is.</p>
+<p>In either event, the template also asks us to define the nearer-term more pragmatic Ideal. This is the one that will in effect be used as the end goal defining where we’d like to reach at the end of this current problem solving cycle. It could, of course, be the same definition as the ultimate Ideal, but in this particular case, the decision has been made to focus on the achievement of what is in effect a resolution of the effective-versus-efficient conflict and to create a research system that does what society needs it to do. Again, the choice of Compass heading is determined by the ambition level of the team. It’s important to get this definition right, and it’s good to spend time thinking hard about it during this first iteration of the COBRA+ cycle, but at the same time, we also know that we will have an opportunity to re-think it when we come to the end of the first cycle and are contemplating starting a second. If in doubt, get started and let the process guide you.</p>
+<p>Meanwhile, having completed the C template, we’re at liberty to proceed to the next stage of our first cycle through the process. This is where we get to think about the O for Outcomes the various different stakeholders are looking to achieve at each of the Moments of Truth that might be relevant to us. The first task here, therefore is to define who those stakeholders are, and what Moments of Truth they are likely to encounter. Here’s what this particular team decided to include:</p>
+<p><strong>Figure 42 : Completed Outcome Scoping Template For Exemplar Case Study</strong></p>
+<p>Having defined these two inputs, we’re now potentially faced with the prospect of constructing a 2x2 Outcome Map for each stakeholder at each of the various Moments Of Truth. This is potentially quite a lot of work. It is also important that we do it since what we do here is going to have a big influence on our eventual likelihood of success. If any one of the stakeholders is not getting what they perceive they are looking for at any Moment of Truth they can easily cause the whole system to revert to its current – or worse – state.</p>
+<p>That said, as far as writing up the case study is concerned for the purposes of this book, printing 30 (6x5) completed 2x2 matrices is going to take up a lot of pages and not add a lot of value in terms of communicating the important learning points. With that in mind, we will print two of the completed templates in order to communicate what needs to be communicated. We start with the researcher at the moment where they’re submitting the paper describing the findings of their research:</p>
+<p><strong>Figure 43 Completed Outcome Map Template For ‘Researchers’ In Exemplar Case Study</strong></p>
+<p>Important to note when we are completing these template sheets is that we think about the outcomes the stakeholders are looking to achieve in the future as well as looking at what they’re achieving in the current situation. Some of these things will be positive and some will be negative. Any time we find a situation in which the current outcome is a negative one, we have obtained a potentially important clue about what we might look to improve in the eventual solution. In this particular template, following the convention of accountants, the outcomes in parentheses are the ones that are currently perceived to be negative. In a problem solving session not confined by the limitations of black-and-white printing, it is probably easier to distinguish between the positive and negative by using different colour pens.</p>
+<p>Also important when completing the – usually more difficult – right-hand ‘intangible’ columns is to think about the ABC-M model and how well or otherwise those fundamental needs are or are not being met by the current system. We know inherently that in the future we’re supposing to be designing a solution in which they’re all heading in the direction of ‘getting better’, but first up we need to know where they currently are. Bearing in mind too that we need to think the current state through for ourselves, empathising with the stakeholder, but at the same time recognising that if we go ask them about the intangible stuff, we’re unlikely to come away with any kind of meaningful answer. The other watch-out in some industries is whether to include the ‘M’ for Meaning part of the ABC-M model. Meaning is a fundamental need but forcing people to think about it in many current contexts swiftly serves to force problem solvers to recognise there’s an awful lot of meaningless stuff around us. If you don’t wish to get into those kind of deep waters right now, the suggestion is to note the problem for future consideration, and to focus on getting ABC moving in the right direction for now. Fortunately, in this particular case study, we’re almost inherently in the Meaning-delivery business and so have every desire to include it in the analysis.</p>
+<p>Here’s a second version of the completed 2x2 Outcome Matrix, this time completed to examine the perspective of the Reviewer at the Moment of Truth where they’re submitting their review decision.</p>
+<p><strong>Figure 44 Completed Outcome Map Template For ‘Reviewers’ In Exemplar Case Study</strong></p>
+<p>Finally, really by way of demonstrating that we did actually construct all 30 Outcome Maps, one thing that became apparent was that when we connect the incentives that are in place in the current research system – i.e.&nbsp;the list of incentives from Table 2 – to the ABC-M</p>
+<p>intangible outcome needs we find a picture that was almost universal across the different stakeholders. Here’s what that picture looks like:</p>
+<p><strong>Figure 45 ABC-M Assessment For Incentives In Exemplar Case Study</strong></p>
+<p>Here we note that none of the current incentives within the system do a good job as far as getting the ABC-M drivers moving in the right direction. In every case they serve to detract from Meaning, and in two cases in particular – rewarding for increased grant funding and increased US News ranking – all four of the ABC-M metrics are heading in the wrong direction. The ‘O’ stage of COBRA+ is about a divergent problem definition task, so we shouldn’t expect to have ‘solved’ anything at this stage, but as far as identifying opportunities to improve the overall system, there seem to be plenty of opportunity ‘clues’ on show in this picture. We could, should we so wish, jump forward to the ‘And’ stage of the process and explore some potential solutions (knowing that we can always jump back to where we left off if we don’t get good solutions), but, first time through, its highly recommended that we stick to the sequence that COBRA+ lays out for us.</p>
+<p>Which means that next up comes B for Buts. This is often the part of the process we hear delegates describing as ‘cathartic’. It’s where we get to list out all of the things that we perceive will prevent us from achieving our pragmatic Ideally statement as defined at the Compass stage. Fortunately, in this case study that work has largely been done for us by the authors of the Reference 31 paper when they laid out all of the ‘Actual Effects’ that have resulted from the system’s current suite of incentives. Each one of these statements can effectively be re-written as a ‘yes, but’ reason why we can’t achieve what we want from the system. Here is that list of Actual Effects in their re-worded ‘yes, but’ form as they would be entered into the template sheet:</p>
+<p><strong>Figure 46 Translating Current State Into ‘Yes, But’ Statements In Exemplar Case Study</strong></p>
+<p>And then, after we’ve completed the ‘Leads to’ column on the template, we can draw the Perception Map.</p>
+<p>The Perception Mapping process and the underlying psychology of the ‘leads to’ question have been described in multiple sources in the Systematic Innovation suite of outputs, but probably easiest in this instance to start with the Hands-On Systematic Innovation for Business &amp; Management chapter (Reference 5, Chapter 9). Out of all the tools we’ve built over the years, this is the one that gets used most frequently. The power comes from the recognition (by design-thinking pioneer, Edward do Bono, initially) that understanding complex systems demands mapping the relationships between the things in the system and that the ‘leads to’ question is a way of doing this that engages the creative, divergent parts of the brain to do the job. What the process here forces us to do is take each of our ‘yes, but’ statements and answer the question, ‘which of the other ones does this statement lead to?’</p>
+<p>In each case, when answering the ‘leads to’ question, the process forces the problem solver to choose one other statement. In situations where we can see that one statement leads to potentially multiple of the other ones, we make our choice on the basis of which one it leads to first.</p>
+<p>When we’ve completed all of our ‘leads to’ answers, the final job is to construct the Perception Map. Here’s what it looks like in our current case study:</p>
+<p><strong>Figure 47 Resulting ‘But’ Stage Perception Map In Exemplar Case Study</strong></p>
+<p>And here’s the critical elements of the Map as far as drawing conclusions pertaining to what the main contradictions preventing us from achieving the Ideal solution are concerned:</p>
+<p><strong>Figure 48 Vicious Cycle Detail From ‘But’ Stage Perception Map In Exemplar Case Study</strong></p>
+<p>What this vicious cycle loop tells us in this situation is that the most significant issue – being both part of the loop and also a collector of multiple other perceptions – is what we might think of as ‘mis-directed thinking’. In other words, because academics are ‘forced’ to play games in the system to meet the incentive targets, they are spending less time on the important research issues. If we are to start somewhere to break out of this vicious cycle, this would be a good place to start.</p>
+<p>Having now found a good place to start, we have come to the end of the problem definition convergent stage. We’re now ready to make the transition into solution generation tasks.</p>
+<p>The first of these is R for Resources. The main idea behind this stage is to look for things in or around the system that we’re not making best use of. There are several ways to do this job, the most structured of which is to use the 9-Windows tool from TRIZ (Reference 5, Chapter 4). Here’s the results of filling out the basic 9-Windows template for our case study problem:</p>
+<p><strong>Figure 49 9-Windows Resource Assessment In Exemplar Case Study</strong></p>
+<p>The main thing to bear in mind as we make this resource search is to keep going – we’re in divergent mode and so we’re encouraged to keep on looking even after we might have had an ‘a-ha’ moment or two when we identify things that instinctively feel like they will be ‘the answer’ to our problem. In this case, thinking about emerging AI tools, for example, might immediately suggest an intriguing area for deeper investigation, but that ‘discovery’ hasn’t stopped the search for other potential resources to continue.</p>
+<p>Also worth paying attention to is the TRIZ idea that, ‘even the bad stuff is good stuff’. Some of the ‘resources’ identified in the Figure appear at first glance to be problems rather than things that can help solve the problems at hand. Inside each of those negative things lies the potential for significant breakthrough. ‘Lack of money’ is usually viewed (today at least) as a problem, but it is also a potentially terrific resource: lack of money forces researchers to think harder about the problem they’re trying to solve and become more imaginative about how they move the subject forward.</p>
+<p>There’s often a temptation to also ‘goof-off’ a bit when using the 9-Windows tool. It’s hard work, and therefore human’s have an innate temptation to stop when we believe we have ‘enough’ clues and ideas. The main difference between innovators and make-believe-innovators is the sometimes extraordinary level of persistence exhibited by the former. The good news, either way around, is that should we find ourselves one a second or subsequent cycle through the overall COBRA+ process, we won’t have to start from scratch every time we reach the R stage. We might have a more focused set of clues to help in the search for additional resources to the ones we revealed in the previous cycle, but we’ll also still have the previous set already laid out in the 9-Windows template.</p>
+<p>Next up, then, comes A for ‘And’. This is where we – finally – get to make use of the Business Matrix. We’ve discussed the mechanics of how to map our specific problem onto the generic parameters that are included in the Matrix in an earlier case study example, so all we need to do here is reproduce the And template used to map this case study problem. It looks something like this:</p>
+<p><strong>Figure 50 Completed ‘And’ Stage Conflict Mapping Template In Exemplar Case Study</strong></p>
+<p>(We mapped ‘true scientific productivity’ onto the Matrix as ‘Amount of Information’ on the basis that productivity in the research sense is, in our mind, all about the generation of new and useful knowledge. We then interpreted the Perception Map vicious cycle loop as a very emotion-driven propensity on the part of researchers to devote their creative energies to the wrong problems. The best fit for this from the 45 available Matrix Parameters seemed to be the intangible catch-all, ‘Negative Intangibles’.)</p>
+<p>Now we have a list of Inventive Principles we can start using to generate as big a list of solution clues as we have the energy to continue with. Within the Systematic Innovation team, we usually force ourselves to generate at least five ‘clues’ from each of the Inventive Principles in our list. Importantly, the primary job at this stage is to focus on quantity. Here’s the result of deploying a ‘minimum of five clues per Principle’ heuristic during the ideation session.</p>
+<p><strong>Figure 51 List Of Solution Clues Generated During ‘And’ Stage In Exemplar Case Study</strong></p>
+<p>Notice in this example, how we have also gone back to our Outcome and Resources outputs to help us to turn the abstract Principle directions into clues that are more tangible and relevant to the problem at hand.</p>
+<p>Generating large numbers of ideas is taxing work, and so its often a good idea to do the job in several stages. What seems to be especially beneficial is allowing some incubation time. Starting an ‘And’ session in the last hour of a working day, then coming back to continue the job first thing next morning is a perfect way to allow our brain to incubate on connections we failed to make during the first session.</p>
+<p>When we’ve ‘finished’ the divergent stage of And (yet again, ‘diverge ’til it hurts’), the final job is to start converging on our potential ‘answer’. Convergence here typically means, first of all looking to cluster clues possessing common themes, and then looking for good combinations. There are numerous ways to be objective about deciding what good means (Reference 5, Chapter 22), but often the simplest and most effective way is to focus on those clues that feel like the most intriguing or that you start to feel yourself getting passionate about, or the ones that seem to invoke some kind of a ‘wow’ reaction. Problem solving teams that have been embroiled in an intractable problem for a long time ‘know’ when they can finally see a way out.</p>
+<p>No-one in the SI team is a domain expert in the world of academic incentives, but we do know that ‘someone, somewhere has solved the problem’ and so, as far as our first iteration of the COBRA+ process for this problem is concerned, we can at least say that the idea of having objective means of measuring the quality of academic research offers up an important potential step forward (we know this because we’ve created an equivalent tool for the world of patents – if you incentivise ‘number of patents’ you’ll quickly receive lots of patent applications. You’ll also see that very quickly their quality goes rapidly down-hill. The moment you know how to objectively measure quality and communicate it to inventors, both quantity and quality go up). Here’s our – outsiders – attempt to take that basic solution clue and combine it with some of the other emerging clues:</p>
+<p><strong>Figure 52 Completed ‘And’ Summary Template In Exemplar Case Study</strong></p>
+<p>We could declare that this ‘solution’ is the end of the story and start exposing it to prospective stakeholders, but really we ought to use the final ‘+’ step of the COBRA+ process to check that what we have really is a solution.</p>
+<p>The ‘+’ task requires us to answer a number of evaluating questions: Is the solution good enough?</p>
+<p>Well, difficult for us to know. It certainly feels okay, and we know it works in other domains, so maybe the answer is a cautious ‘yes’. There’s certainly nothing relating to the quality of the solution itself that would prevent us from exposing it to third parties.</p>
+<section id="do-all-the-stakeholders-perceive-a-win" class="level3">
+<h3 class="anchored" data-anchor-id="do-all-the-stakeholders-perceive-a-win">Do all the stakeholders perceive a win?</h3>
+<p>Answering this one is a bit more problematic. We know from our earlier Outcome analysis that everyone likes to feel competent. This raises a possible danger with our research quality measurement solution that it reveals that my research work is not good. Such news will definitely tend to make people feel incompetent, and so we know we have the potential for a very clear impediment to the adoption of our solution. The same thing might well go for other stakeholders. The more we think about it, the more it feels like the answer to the question is ‘no’.</p>
+<p>The moment we draw this conclusion, our answers to the subsequent ‘+’ questions are largely irrelevant. This is not a ‘three out of four’ majority situation, if there’s a problem with any one answer, we know we are not going to be successful and that we haven’t finished. What we now need to do is head around to C for Compass again and contemplate another loop around the process…</p>
+<p>…Ideally… researchers buy-in to and willingly adopt the quality assessment method…</p>
+<p>…and we’re off again. Except maybe not here because our job of walking through the COBRA+ process is done. (The case study is a real one, by the way, so if any readers are desperately interested in the outcome of the second (and third) process cycle, keep your eye out for the write-up in the Systematic Innovation ezine.)</p>
+<p>Finally, all we need to do here is refer intrigued problem-solvers wishing to give COBRA+ a try to head to the set of COBRA+ template sheets found at the back of the book. Or, if you want an electronic copy, to the systematic-innovation.com ‘Downloads’ page.</p>
+</section>
+</section>
+<section id="contradiction-hierarchies-root-contradictions" class="level2">
+<h2 class="anchored" data-anchor-id="contradiction-hierarchies-root-contradictions">Contradiction Hierarchies &amp; Root Contradictions</h2>
+<p>Knowledge of complex systems clearly reveals, as stated earlier, there is no such thing as a ‘root cause’. The Perception Map output from the COBRA+ process (see Figures 38 and 46 for example) reveal, at best, that the ‘root’ of a problem is a conspiracy of causes. In many cases, the Map will likely reveal two or more vicious cycle loops. In which case, we can’t even say that there is a single conspiracy of causes. ‘Solving’ problems where there are multiple different vicious cycles present, means that each vicious cycle needs to be successfully broken. The COBRA+ process enables and facilitates such activities because, wherever possible it has been designed to be a ‘self-correcting’ process. If, for example, at the end of a loop through C-O-B-R-A and we arrive at the feedback loop triggering ‘+’ stage, the questions we’re forced to think about will, by definition, force us to re-think what the problem we’re supposed to be working on next is.</p>
+<p>That said, there is a possibility that, having made a couple of loops of the process, we begin to feel like we’re going around in a circle. Hopefully, the situation is rare, but it has happened often enough to us that we’ve felt it necessary to design a back-up plan. Hence, this section on ‘contradiction hierarchies. It is placed here after the COBRA+ section of the book by way of a ’fall-back’ option if COBRA+ doesn’t get us to where we want to be. That said, we also know that some users of the following contradiction hierarchy mapping tool often use it as a stand-alone problem exploration tool. Others have begun to use it as a prelude to a COBRA+ exercise. As with all things, the tools are supposed to adapt to the user rather than the other way around. Our job here is to describe the tool so that individual readers can make up their own minds as to whether the Contradiction Hierarchy Template (CHT) has any place in their problem-solving armoury.</p>
+<p>The start point for thinking about contradiction hierarchies is the Einstein quote, ‘You can never solve a problem on the level on which it was created’. There’s a similar quote, too, within the TRIZ world, it goes something like, ‘the customer is always right. Apart from the problem they’ve asked you to come and solve’. Humans, in other words, don’t seem to be too good at stepping outside their own realm of experience to see what their problems might look like from other peoples’ perspective.</p>
+<p>Our CHT has been around for some time now – under the name, ‘Why-What’s-Stopping’ (WWS) – as a specific means of breaking out of the psychological inertia often associated with our difficulties in defining the ‘right’ problem. Or, to put it more kindly, to give ourselves a broader spectrum of options when it comes to determining what level of problem we really wish to take on.</p>
+<p>Filling the Template will typically start in the middle, with the box marked, ‘Original Problem’. This is where we record our current perception of the problem we’d like to tackle. The Template then forces us to think about a couple of questions: ‘what’s stopping us from solving the problem?’ as a way of drilling down, and ‘why do we want to solve this problem?’ as a way of broadening it. The ‘what’s stopping’ question is a lot like the ‘Ideally, But…’ ‘B’ stage of the COBRA+ process. The main difference between what we see there and what we need to do with the CHT is that we use the answer to the question to formulate a narrower problem. And then we repeat the process, asking, ‘what’s stopping us?’ in relation to this narrower problem. And then we do it again. And potentially again. Until we reach a point where, if we’ve been clear in our thinking, we should have reached our ‘root contradiction’.</p>
+<p>The top- part of the Template, meanwhile is all about repeatedly asking the ‘why?’ question. This will force us to broaden the problem, and as such challenge whether we need to shift our thinking to a more big picture strategic view of the world. The Template is shown here in Figure 52:</p>
+<p><strong>Figure 53 : Contradiction Hierarchy Template</strong></p>
+<p>As with nearly everything in and around the TRIZ world, it is often easier to see how the Template works through a tangible example. We do that here in Figure 53. The initial problem setting for this example is an increasingly common situation relating to the use of Artificial Intelligence (AI) in a business setting, and particularly the use of Machine-Learning Algorithms (MLA) that, in theory at least, allow the software system to ‘learn’ such that the more it is used the better it gets (see also Reference 32 for another perspective on the extent of the problem). MLAs require input data to train themselves, such that, if, for example, we’re trying to build an algorithm to detect whether an insurance claim from a customer is fraudulent, we need to ‘show’ the software examples of previous cases where fraud was found to be present. The problem – at least a typical initial problem statement that fills the middle box in the Template – is not being able to obtain sufficient useful training data.</p>
+<p>There are a few learning points that hopefully emerge from examining the completed template:</p>
+<ol type="1">
+<li>When we’re moving in the narrowing direction, it is quite likely that when we ask the ‘what’s stopping?’ question, we realise that there are multiple answers. In the case of the Figure 53 template, two have been identified. In other cases it could be more. It is worth spending time being comprehensive in mapping out each of the ‘what’s stopping’ candidates, even though it inevitably means more work as we drill down to formulate the problem definition at the next level down. Fortunately, the drilling-down process tends to be strongly convergent, so the task should get progressively less onerous the further down we drill…</li>
+<li>…in theory, however, there’s no limit to how many times we are able to keep drilling down. In this case, we’ve been able to drill down twice before hitting what feels like an and point. In actual fact two end points. Experience of using the Template for close to a couple of decades now reveals the heuristic that the ‘bottom’ of the story either involves a Physical Contradiction (our ‘root contradiction’) or what we typically refer to as a ‘knowledge problem’. This is the situation where ‘what’s stopping’ us is that we simply don’t know how to achieve what we need to achieve. In the Figure 53 example, we can actually see both end-points: there is the Physical Contradiction (‘we want lots of data and we want little data’) and there is a knowledge problem: someone needs to define ‘purpose’.</li>
+</ol>
+<p><strong>Figure 54 Exemplar Completed Contradiction Hierarchy Template</strong></p>
+<p>3) Once we’ve finished, if we look up and down the middle column of the Template, we can effectively see an overall problem hierarchy – in this case a range that spans solving a ‘lots-versus-little’ data issue or enabling meaningful decision to be made in complex environments. We can now – authority permitting – make a much more informed decision about the level we’re wanting to (or are empowered to) progress from. Whatever level we choose, we know we’ve already found a contradiction (i.e.&nbsp;we have a problem statement and a corresponding ‘what’s stopping us’ statement that forms the other side of the contradiction) and so can start using the Matrix to begin exploring solutions. We also know that, should our attempts to solve the problem at the chosen level, we can always return to the CHT and try tackling the problem at a different level. As with all things in and around TRIZ, the template’s job is to give a structure that allows users to deviate from at any time, safe in the knowledge that, should the deviation not prove fruitful, there’s always the possibility to return to the structure.</p>
+
+
+</section>
+</section>
+
+</main> <!-- /main -->
+<script id="quarto-html-after-body" type="application/javascript">
+window.document.addEventListener("DOMContentLoaded", function (event) {
+  const toggleBodyColorMode = (bsSheetEl) => {
+    const mode = bsSheetEl.getAttribute("data-mode");
+    const bodyEl = window.document.querySelector("body");
+    if (mode === "dark") {
+      bodyEl.classList.add("quarto-dark");
+      bodyEl.classList.remove("quarto-light");
+    } else {
+      bodyEl.classList.add("quarto-light");
+      bodyEl.classList.remove("quarto-dark");
+    }
+  }
+  const toggleBodyColorPrimary = () => {
+    const bsSheetEl = window.document.querySelector("link#quarto-bootstrap");
+    if (bsSheetEl) {
+      toggleBodyColorMode(bsSheetEl);
+    }
+  }
+  toggleBodyColorPrimary();  
+  const icon = "";
+  const anchorJS = new window.AnchorJS();
+  anchorJS.options = {
+    placement: 'right',
+    icon: icon
+  };
+  anchorJS.add('.anchored');
+  const isCodeAnnotation = (el) => {
+    for (const clz of el.classList) {
+      if (clz.startsWith('code-annotation-')) {                     
+        return true;
+      }
+    }
+    return false;
+  }
+  const clipboard = new window.ClipboardJS('.code-copy-button', {
+    text: function(trigger) {
+      const codeEl = trigger.previousElementSibling.cloneNode(true);
+      for (const childEl of codeEl.children) {
+        if (isCodeAnnotation(childEl)) {
+          childEl.remove();
+        }
+      }
+      return codeEl.innerText;
+    }
+  });
+  clipboard.on('success', function(e) {
+    // button target
+    const button = e.trigger;
+    // don't keep focus
+    button.blur();
+    // flash "checked"
+    button.classList.add('code-copy-button-checked');
+    var currentTitle = button.getAttribute("title");
+    button.setAttribute("title", "Copied!");
+    let tooltip;
+    if (window.bootstrap) {
+      button.setAttribute("data-bs-toggle", "tooltip");
+      button.setAttribute("data-bs-placement", "left");
+      button.setAttribute("data-bs-title", "Copied!");
+      tooltip = new bootstrap.Tooltip(button, 
+        { trigger: "manual", 
+          customClass: "code-copy-button-tooltip",
+          offset: [0, -8]});
+      tooltip.show();    
+    }
+    setTimeout(function() {
+      if (tooltip) {
+        tooltip.hide();
+        button.removeAttribute("data-bs-title");
+        button.removeAttribute("data-bs-toggle");
+        button.removeAttribute("data-bs-placement");
+      }
+      button.setAttribute("title", currentTitle);
+      button.classList.remove('code-copy-button-checked');
+    }, 1000);
+    // clear code selection
+    e.clearSelection();
+  });
+  function tippyHover(el, contentFn) {
+    const config = {
+      allowHTML: true,
+      content: contentFn,
+      maxWidth: 500,
+      delay: 100,
+      arrow: false,
+      appendTo: function(el) {
+          return el.parentElement;
+      },
+      interactive: true,
+      interactiveBorder: 10,
+      theme: 'quarto',
+      placement: 'bottom-start'
+    };
+    window.tippy(el, config); 
+  }
+  const noterefs = window.document.querySelectorAll('a[role="doc-noteref"]');
+  for (var i=0; i<noterefs.length; i++) {
+    const ref = noterefs[i];
+    tippyHover(ref, function() {
+      // use id or data attribute instead here
+      let href = ref.getAttribute('data-footnote-href') || ref.getAttribute('href');
+      try { href = new URL(href).hash; } catch {}
+      const id = href.replace(/^#\/?/, "");
+      const note = window.document.getElementById(id);
+      return note.innerHTML;
+    });
+  }
+      let selectedAnnoteEl;
+      const selectorForAnnotation = ( cell, annotation) => {
+        let cellAttr = 'data-code-cell="' + cell + '"';
+        let lineAttr = 'data-code-annotation="' +  annotation + '"';
+        const selector = 'span[' + cellAttr + '][' + lineAttr + ']';
+        return selector;
+      }
+      const selectCodeLines = (annoteEl) => {
+        const doc = window.document;
+        const targetCell = annoteEl.getAttribute("data-target-cell");
+        const targetAnnotation = annoteEl.getAttribute("data-target-annotation");
+        const annoteSpan = window.document.querySelector(selectorForAnnotation(targetCell, targetAnnotation));
+        const lines = annoteSpan.getAttribute("data-code-lines").split(",");
+        const lineIds = lines.map((line) => {
+          return targetCell + "-" + line;
+        })
+        let top = null;
+        let height = null;
+        let parent = null;
+        if (lineIds.length > 0) {
+            //compute the position of the single el (top and bottom and make a div)
+            const el = window.document.getElementById(lineIds[0]);
+            top = el.offsetTop;
+            height = el.offsetHeight;
+            parent = el.parentElement.parentElement;
+          if (lineIds.length > 1) {
+            const lastEl = window.document.getElementById(lineIds[lineIds.length - 1]);
+            const bottom = lastEl.offsetTop + lastEl.offsetHeight;
+            height = bottom - top;
+          }
+          if (top !== null && height !== null && parent !== null) {
+            // cook up a div (if necessary) and position it 
+            let div = window.document.getElementById("code-annotation-line-highlight");
+            if (div === null) {
+              div = window.document.createElement("div");
+              div.setAttribute("id", "code-annotation-line-highlight");
+              div.style.position = 'absolute';
+              parent.appendChild(div);
+            }
+            div.style.top = top - 2 + "px";
+            div.style.height = height + 4 + "px";
+            let gutterDiv = window.document.getElementById("code-annotation-line-highlight-gutter");
+            if (gutterDiv === null) {
+              gutterDiv = window.document.createElement("div");
+              gutterDiv.setAttribute("id", "code-annotation-line-highlight-gutter");
+              gutterDiv.style.position = 'absolute';
+              const codeCell = window.document.getElementById(targetCell);
+              const gutter = codeCell.querySelector('.code-annotation-gutter');
+              gutter.appendChild(gutterDiv);
+            }
+            gutterDiv.style.top = top - 2 + "px";
+            gutterDiv.style.height = height + 4 + "px";
+          }
+          selectedAnnoteEl = annoteEl;
+        }
+      };
+      const unselectCodeLines = () => {
+        const elementsIds = ["code-annotation-line-highlight", "code-annotation-line-highlight-gutter"];
+        elementsIds.forEach((elId) => {
+          const div = window.document.getElementById(elId);
+          if (div) {
+            div.remove();
+          }
+        });
+        selectedAnnoteEl = undefined;
+      };
+      // Attach click handler to the DT
+      const annoteDls = window.document.querySelectorAll('dt[data-target-cell]');
+      for (const annoteDlNode of annoteDls) {
+        annoteDlNode.addEventListener('click', (event) => {
+          const clickedEl = event.target;
+          if (clickedEl !== selectedAnnoteEl) {
+            unselectCodeLines();
+            const activeEl = window.document.querySelector('dt[data-target-cell].code-annotation-active');
+            if (activeEl) {
+              activeEl.classList.remove('code-annotation-active');
+            }
+            selectCodeLines(clickedEl);
+            clickedEl.classList.add('code-annotation-active');
+          } else {
+            // Unselect the line
+            unselectCodeLines();
+            clickedEl.classList.remove('code-annotation-active');
+          }
+        });
+      }
+  const findCites = (el) => {
+    const parentEl = el.parentElement;
+    if (parentEl) {
+      const cites = parentEl.dataset.cites;
+      if (cites) {
+        return {
+          el,
+          cites: cites.split(' ')
+        };
+      } else {
+        return findCites(el.parentElement)
+      }
+    } else {
+      return undefined;
+    }
+  };
+  var bibliorefs = window.document.querySelectorAll('a[role="doc-biblioref"]');
+  for (var i=0; i<bibliorefs.length; i++) {
+    const ref = bibliorefs[i];
+    const citeInfo = findCites(ref);
+    if (citeInfo) {
+      tippyHover(citeInfo.el, function() {
+        var popup = window.document.createElement('div');
+        citeInfo.cites.forEach(function(cite) {
+          var citeDiv = window.document.createElement('div');
+          citeDiv.classList.add('hanging-indent');
+          citeDiv.classList.add('csl-entry');
+          var biblioDiv = window.document.getElementById('ref-' + cite);
+          if (biblioDiv) {
+            citeDiv.innerHTML = biblioDiv.innerHTML;
+          }
+          popup.appendChild(citeDiv);
+        });
+        return popup.innerHTML;
+      });
+    }
+  }
+});
+</script>
+</div> <!-- /content -->
+
+
+
+</body></html>

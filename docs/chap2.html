@@ -1,0 +1,683 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en"><head>
+
+<meta charset="utf-8">
+<meta name="generator" content="quarto-1.3.433">
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+
+
+<title>triz4business – chap2</title>
+<style>
+code{white-space: pre-wrap;}
+span.smallcaps{font-variant: small-caps;}
+div.columns{display: flex; gap: min(4vw, 1.5em);}
+div.column{flex: auto; overflow-x: auto;}
+div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+ul.task-list{list-style: none;}
+ul.task-list li input[type="checkbox"] {
+  width: 0.8em;
+  margin: 0 0.8em 0.2em -1em; /* quarto-specific, see https://github.com/quarto-dev/quarto-cli/issues/4556 */ 
+  vertical-align: middle;
+}
+</style>
+
+
+<script src="site_libs/quarto-nav/quarto-nav.js"></script>
+<script src="site_libs/quarto-nav/headroom.min.js"></script>
+<script src="site_libs/clipboard/clipboard.min.js"></script>
+<script src="site_libs/quarto-search/autocomplete.umd.js"></script>
+<script src="site_libs/quarto-search/fuse.min.js"></script>
+<script src="site_libs/quarto-search/quarto-search.js"></script>
+<meta name="quarto:offset" content="./">
+<script src="site_libs/quarto-html/quarto.js"></script>
+<script src="site_libs/quarto-html/popper.min.js"></script>
+<script src="site_libs/quarto-html/tippy.umd.min.js"></script>
+<script src="site_libs/quarto-html/anchor.min.js"></script>
+<link href="site_libs/quarto-html/tippy.css" rel="stylesheet">
+<link href="site_libs/quarto-html/quarto-syntax-highlighting.css" rel="stylesheet" id="quarto-text-highlighting-styles">
+<script src="site_libs/bootstrap/bootstrap.min.js"></script>
+<link href="site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
+<link href="site_libs/bootstrap/bootstrap.min.css" rel="stylesheet" id="quarto-bootstrap" data-mode="light">
+<script id="quarto-search-options" type="application/json">{
+  "location": "navbar",
+  "copy-button": false,
+  "collapse-after": 3,
+  "panel-placement": "end",
+  "type": "overlay",
+  "limit": 20,
+  "language": {
+    "search-no-results-text": "No results",
+    "search-matching-documents-text": "matching documents",
+    "search-copy-link-title": "Copy link to search",
+    "search-hide-matches-text": "Hide additional matches",
+    "search-more-match-text": "more match in this document",
+    "search-more-matches-text": "more matches in this document",
+    "search-clear-button-title": "Clear",
+    "search-detached-cancel-button-title": "Cancel",
+    "search-submit-button-title": "Submit",
+    "search-label": "Search"
+  }
+}</script>
+
+
+<link rel="stylesheet" href="styles.css">
+</head>
+
+<body class="nav-fixed">
+
+<div id="quarto-search-results"></div>
+  <header id="quarto-header" class="headroom fixed-top">
+    <nav class="navbar navbar-expand-lg navbar-dark ">
+      <div class="navbar-container container-fluid">
+      <div class="navbar-brand-container">
+    <a class="navbar-brand" href="./index.html">
+    <span class="navbar-title">triz4business</span>
+    </a>
+  </div>
+            <div id="quarto-search" class="" title="Search"></div>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
+  <span class="navbar-toggler-icon"></span>
+</button>
+          <div class="collapse navbar-collapse" id="navbarCollapse">
+            <ul class="navbar-nav navbar-nav-scroll me-auto">
+  <li class="nav-item">
+    <a class="nav-link" href="./index.html" rel="" target="">
+ <span class="menu-text">Home</span></a>
+  </li>  
+  <li class="nav-item">
+    <a class="nav-link" href="./chap1.html" rel="" target="">
+ <span class="menu-text">Chapter 1</span></a>
+  </li>  
+  <li class="nav-item">
+    <a class="nav-link active" href="./chap2.html" rel="" target="" aria-current="page">
+ <span class="menu-text">Chapter 2</span></a>
+  </li>  
+  <li class="nav-item">
+    <a class="nav-link" href="./chap3.html" rel="" target="">
+ <span class="menu-text">Chapter 3</span></a>
+  </li>  
+</ul>
+            <div class="quarto-navbar-tools ms-auto">
+</div>
+          </div> <!-- /navcollapse -->
+      </div> <!-- /container-fluid -->
+    </nav>
+</header>
+<!-- content -->
+<div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-article page-navbar">
+<!-- sidebar -->
+<!-- margin-sidebar -->
+    <div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
+        <nav id="TOC" role="doc-toc" class="toc-active">
+    <h2 id="toc-title">On this page</h2>
+   
+  <ul>
+  <li><a href="#using-the-matrix" id="toc-using-the-matrix" class="nav-link active" data-scroll-target="#using-the-matrix">Using The Matrix</a>
+  <ul class="collapse">
+  <li><a href="#getting-started" id="toc-getting-started" class="nav-link" data-scroll-target="#getting-started">Getting Started</a></li>
+  <li><a href="#conflicts" id="toc-conflicts" class="nav-link" data-scroll-target="#conflicts">Conflicts</a></li>
+  <li><a href="#conflict-abstraction-template-cat" id="toc-conflict-abstraction-template-cat" class="nav-link" data-scroll-target="#conflict-abstraction-template-cat">Conflict Abstraction Template (CAT)</a></li>
+  <li><a href="#conflict-case-study" id="toc-conflict-case-study" class="nav-link" data-scroll-target="#conflict-case-study">Conflict Case Study</a></li>
+  <li><a href="#physical-contradictions" id="toc-physical-contradictions" class="nav-link" data-scroll-target="#physical-contradictions">Physical Contradictions</a></li>
+  <li><a href="#separation-strategies" id="toc-separation-strategies" class="nav-link" data-scroll-target="#separation-strategies">Separation Strategies</a></li>
+  <li><a href="#physical-contradiction-template" id="toc-physical-contradiction-template" class="nav-link" data-scroll-target="#physical-contradiction-template">Physical Contradiction Template</a></li>
+  <li><a href="#physical-contradiction-case-study" id="toc-physical-contradiction-case-study" class="nav-link" data-scroll-target="#physical-contradiction-case-study">Physical Contradiction Case Study</a></li>
+  <li><a href="#trilemmas" id="toc-trilemmas" class="nav-link" data-scroll-target="#trilemmas">Trilemmas</a></li>
+  <li><a href="#the-conversion-process-works-like-this" id="toc-the-conversion-process-works-like-this" class="nav-link" data-scroll-target="#the-conversion-process-works-like-this">The conversion process works like this:</a></li>
+  <li><a href="#bubble-map-template" id="toc-bubble-map-template" class="nav-link" data-scroll-target="#bubble-map-template">‘Bubble-Map’ Template</a></li>
+  <li><a href="#trilemmabubble-map-case-study" id="toc-trilemmabubble-map-case-study" class="nav-link" data-scroll-target="#trilemmabubble-map-case-study">Trilemma/Bubble-Map Case Study</a></li>
+  <li><a href="#so-which-is-the-right-strategy" id="toc-so-which-is-the-right-strategy" class="nav-link" data-scroll-target="#so-which-is-the-right-strategy">So which is the right strategy?</a></li>
+  <li><a href="#problem-to-solution-transition-strategies" id="toc-problem-to-solution-transition-strategies" class="nav-link" data-scroll-target="#problem-to-solution-transition-strategies">Problem-To-Solution Transition Strategies</a>
+  <ul class="collapse">
+  <li><a href="#connecting-specific-problems-to-the-parameters" id="toc-connecting-specific-problems-to-the-parameters" class="nav-link" data-scroll-target="#connecting-specific-problems-to-the-parameters">1. Connecting Specific Problems to the Parameters</a></li>
+  <li><a href="#principle-hierarchies" id="toc-principle-hierarchies" class="nav-link" data-scroll-target="#principle-hierarchies">2. Principle Hierarchies</a></li>
+  <li><a href="#principle-combination-strategies" id="toc-principle-combination-strategies" class="nav-link" data-scroll-target="#principle-combination-strategies">3. Principle Combination Strategies</a></li>
+  </ul></li>
+  <li><a href="#getting-the-best-out-of-the-contradiction-matrix" id="toc-getting-the-best-out-of-the-contradiction-matrix" class="nav-link" data-scroll-target="#getting-the-best-out-of-the-contradiction-matrix">Getting The Best Out Of The Contradiction Matrix</a></li>
+  <li><a href="#route-1-finding-the-right-box" id="toc-route-1-finding-the-right-box" class="nav-link" data-scroll-target="#route-1-finding-the-right-box">Route 1: Finding The Right Box</a></li>
+  <li><a href="#route-2-all-possible-boxes" id="toc-route-2-all-possible-boxes" class="nav-link" data-scroll-target="#route-2-all-possible-boxes">Route 2: All Possible Boxes</a></li>
+  <li><a href="#route-3-40-inventive-principles" id="toc-route-3-40-inventive-principles" class="nav-link" data-scroll-target="#route-3-40-inventive-principles">Route 3: 40 Inventive Principles</a></li>
+  <li><a href="#which-route" id="toc-which-route" class="nav-link" data-scroll-target="#which-route">Which Route?</a></li>
+  </ul></li>
+  </ul>
+</nav>
+    </div>
+<!-- main -->
+<main class="content" id="quarto-document-content">
+
+
+
+<section id="using-the-matrix" class="level1">
+<h1>Using The Matrix</h1>
+<section id="getting-started" class="level2">
+<h2 class="anchored" data-anchor-id="getting-started">Getting Started</h2>
+<p>If this is the first time you’ve seen the Business Matrix, the usual easiest place to start familiarising yourself is with the fold-out sheet that accompanies the book. This format of the Matrix has been around, largely unchanged since the 1950s. The two dimensions represent two questions: ‘what are you trying to improve?’ and ‘what’s stopping you?’. The left hand side of the sheet shows a column describing 45 different Parameters that other problem solvers in a business and management setting have tried to improve. They’ve been clustered into a number of different categories: things that are important during the ‘Design’ part of a system; things that are important during ‘Production’; then ‘Supply’, and ‘Support’; then a cluster that all relate to the ‘Customer’; then ‘Systems’; then ‘Intangibles’; then a small cluster relating to things that are important when we’re trying to measure things, and finally, a pair of Parameters that relate to ‘Harmful factors’. We’ll discuss the details of these 45 Parameters in more detail as we get into the heart of the Matrix. For now, it’s sufficient to note that you’ll see the same clusters and the same 45 Parameters listed across the top of the Matrix. We look at this list when we’re trying to identify the things that are stopping us from improving whatever it is we’re trying to improve.</p>
+<p>The basic idea, then, is that in order to make use of the Matrix, we need to have thought of two things: what am I trying to improve and what’s stopping me. This allows us to find the right row (improving Parameter) and column (worsening Parameter) in the Matrix, and look at the box corresponding to the place where the row and column intersect.</p>
+<p>By way of a simple example, let’s say that our current problem involves us trying to improve Market Demand for our products and services, but we’re lacking Feedback from those Customers. To look this conflict up on the Matrix, we look down the list of improving Parameters until we reach row 22, and then look across the list of worsening Parameters until we reach column 23. Then we look at the intersection of this row and column and find the numbers 4, 33, 27 and 13. These numbers represent a ranked list of the Inventive Principles used by others to successfully challenge this particular conflict. Principle 4 being the most frequently used strategy; 33 the second most frequently used strategy, 27 the third and 13 the fourth. Having obtained these numbers, we can shift our attention to the table on the very right hand side of the sheet. This table lists the 40 Inventive Principles. It’s where we’ll see Principle 4 is ‘Asymmetry’, 33 is ‘Homogeneity’, 27 is ‘Cheap, Short-Living’ and 13 is ‘The Other Way Around’. Then, if we’re not sure what these labels mean, we can turn over the sheet and look at the expanded explanation of each of those Principles. And if that doesn’t help, we can head into the final Section of this book to see a list of examples for each of the Principles.</p>
+<p>The bulk of the content of the book is basically, then, an expanded version of what you’ll find on the fold-out sheet. Each row across the Matrix effectively becomes a pair of pages in the book. So, in order to make use of the book, we first need to identify the Parameter we’re looking to improve and find the pair of pages relevant to that Parameter. Then, within that pair of pages is a table containing all of the worsening Parameters and the ranked list of Inventive Principles. The reason for using the book over the fold-out sheet is that the additional space available allows us to offer a longer list of Inventive Principles for each Improving-Worsening Parameter combination, provide a detailed description of what each of the Parameters means, a list of synonyms, and a number of additional features that will become apparent as we get further into the details.</p>
+</section>
+<section id="conflicts" class="level2">
+<h2 class="anchored" data-anchor-id="conflicts">Conflicts</h2>
+<p>The above example of the tension between Customer Demand and (lack) of Customer Feedback is what we will call a ‘conflict’. Other expressions we might hear people use include ‘chicken-and-egg situation’, conundrum, paradox, and, perhaps most common of all, ‘trade-off’. We use the ‘trade-off’ expression a lot because life conditions us to expect to have to make trade-offs. And, sure enough, for most of our lives that’s exactly what we have to do. Between the time your alarm-clock went off this morning, and the time you left the house to go to work, as we hinted earlier, the likelihood is that you’ve drifted through over a hundred trade-offs (check out Reference 18 if you don’t believe us). The reason for that is your primary focus was efficiency and not innovation. We experience trade-offs all the time, and for most of that time we have to live with it. Indeed, not only this, but the world has given us dozens of methods, tools and strategies to help us to make the trade-offs work as best as they can for us. We tend to call these strategies ‘optimization’ because this sounds like a good thing to do. And, of course, it’s definitely better than not optimizing, but it is ultimately about making the best of a bad job. Ideally, we wouldn’t have to make a trade-off at all. When we sit down with a deliberate intention to design a better way of doing things, this is exactly what we should be doing. We no longer have to abide by the rules of trade-off. Or, we don’t provided we accept that there are indeed ways of solving conflicts in a ‘win-win’ fashion. This is what the Matrix is all about: a collection of all those people that refused to compromise and instead designed a solution in which they achieved the best of both worlds.</p>
+<p>Conflicts are all around us. The easiest way to make them visible, is to ask the pair of conflict questions, ‘what am I trying to improve?’ and ‘what’s stopping me?’ If the answer to the second question is ‘nothing’, there is no conflict; if there is an answer, there is a conflict.</p>
+<p>The next simplest way to identify conflicts is to look at spreadsheet data or graphs. A conflict will always look something like this when drawn on a graph:</p>
+<p><strong>Figure 9 Graphical Representation Of A ‘Conflict’</strong></p>
+<p>What’s happening in a conflict is that as we attempt to improve one parameter the other one gets worse. A classic example would be supply and demand. Or risk-versus reward. Pairs of parameters that enterprises devote inordinate amounts of time attempting to ‘optimize’. Because that’s what we do… until we realise there’s a better way.</p>
+<p>The next problem is that everyone’s problems are unique to them. Or at least that’s what we all think. What the Business Matrix research revealed was that, at a certain level of abstraction, we’re all working on the same problems. We’re not the only people in the world that have experienced the conflict between wanting to increase Customer Demand and not being able to do it because of a lack of Customer Feedback. Mapping this problem onto the Matrix is easy because we can quickly see both of these parameters are featured among the 45 Parameters that make up the side and top of the Matrix. But what happens when our problem is more specific? What happens when we’re managing a team of Marketers through a change process to encourage them become more responsive to changing market conditions, and we’re not getting any buy-in because the new tools we need to teach them come with an unfortunate learning curve? Where are these parameters on the Matrix? There is nothing labelled ‘marketing change’ and neither is there anything about ‘learning curves’. To use the Matrix to tap into how others before us have solved this conflict, we’re going to have to do a bit more thinking. We need to abstract our problem before we can tap into the successful solutions of others that have been there before us.</p>
+<p>(By the way, it is worth noting that when the SI research team is examining these previous successes, they have the same abstraction job to do. Only in reverse: whenever we see an organisation solving this change-versus-learning-curve conflict, we need to work out where to put their solution in the Matrix so that future problem solvers facing their version of the same conflict can find it easily.)</p>
+<p>The abstraction process is all about finding words in the list of 45 Parameters that ‘mean the same’ as the words that we use to describe our specific conflict situation. The overall process looks like this:</p>
+<p><strong>Figure 10 Conflict Abstraction Process</strong></p>
+<p>The first job is involves describing our conflict in our specific words. Next we translate this specific situation into the ‘generic’ by finding words from the Matrix Parameter-list that are equivalent. Once we’ve done this job, we look-up the Inventive Principles at the intersection between the appropriate row and column in order to identify the ‘generic solutions’. This is the list of the top 4 or 6 Inventive Principles used by others to solve the conflict. This just leaves us needing to do the final job of converting the generic solutions into the context of our specific situation. This final job is usually the most time-consuming, and the one that fundamentally demands that we bring to bear our existing domain knowledge. An outsider to the problem will usually find it easy to do the first three jobs; the insiders will tend to be best at translating specific solutions into the local context.</p>
+<p>It’s often easiest, when we start using a new way of thinking, to make use of a template. We’ll introduce and describe such a template in the next section. In the section after that, we’ll have a look at a simple worked example:</p>
+</section>
+<section id="conflict-abstraction-template-cat" class="level2">
+<h2 class="anchored" data-anchor-id="conflict-abstraction-template-cat">Conflict Abstraction Template (CAT)</h2>
+<p>The template mimics the sequence of events described in Figure 10, except it is now expressed as a linear flow, starting at the top and working down through each of the boxes to the bottom. Here’s what the usual CAT looks like:</p>
+<p><strong>Figure 11 Conflict Abstraction Template (CAT)</strong></p>
+<p>The top row of the template is where we’re expected to write down the initial specific problem statement. The left-hand box is for describing the thing we’re trying to improve, and the right-hand column is for describing the thing preventing us from achieving the desired improvement. Importantly here, the job is to describe the problem statement in our own words and in a way that would be meaningful to anyone else that might be a stakeholder.</p>
+<p>The next row is where we record the results of our abstraction job. What we’re trying to do in this pair of boxes is find the closest equivalent words from the list of 45 Matrix Parameters to the words we’ve written in the first row. We need to make the abstraction for both our improving and our worsening parameter. A frequent danger during this abstraction process is to over-think the conversion. The more we look at the list of 45 Parameters, often, the more connections we will find ourselves making to the specific conflict statements we’ve written down. There’s nothing wrong with making all of these connections, but we will tend to make life easier for ourselves if we make the most literal connections possible. ‘Do these words mean the same as these ones?’ is the simple but effective test we should be employing.</p>
+<p>Once we’ve done that, we can now do the easiest part of the process and look up the Inventive Principles present in the box(es) in the Matrix corresponding to our chosen improving and worsening Parameters. The third row of the CAT will essentially just be a list of numbers. These numbers are our ‘generic solutions’ – a ranked list of the strategies used by others to solve the conflict most like ours.</p>
+<p>Finally, then, we come to the last row of the CAT. This is where we start the process of translating the generic solutions into ones that are relevant to the context of our specific situation. The template labels them as ‘clues’ at this stage. This is to emphasise the idea of making as many connections as possible between the Inventive Principles and solution directions that might help us to solve our specific problem. This final box in the CAT is the biggest one. The idea being that here’s where we’re going to be doing the most writing. At this stage, the more solution clues we can derive the better. There are few if any ‘silver bullet’ solutions to an kind of business problem. Far more likely is that our eventual answer will be derived through a judicious combination of the clues that we’ve been generating.</p>
+<p>So much for the theory, let’s see how it might look in practice. To do this we’ll dig a little deeper into the afore-mentioned Marketing Department responsiveness improvement initiative and the learning-curve conflict…</p>
+</section>
+<section id="conflict-case-study" class="level2">
+<h2 class="anchored" data-anchor-id="conflict-case-study">Conflict Case Study</h2>
+<p>Completing the first row of the CAT is relatively in this case since we’ve already described the problem in the previous section. Here’s what it looks like: Original Specific Problem</p>
+<p><strong>Figure 12 Top Row Of The CAT for Responsiveness Versus Learning Curve Conflict</strong></p>
+<p>Completing the second row requires us to identify Parameters within the list of 45 featured in the Matrix that best match these two boxes. Let’s start with the left-hand side and our desire to improve the responsiveness of the Marketing Department. There’s no Parameter in the list that specifically mentions ‘responsiveness’ so we need to find the closest match we can. ‘Adaptability/Versatility’ on row 28 looks like a pretty good match. So does ‘Support Time’ on row 18. Examination of the list of synonyms for both further reveals that either could be appropriate. We could choose, therefore, to include both of them in our translation. If we wish to explore a little further into the difference between ‘versatility’ and ‘time’ we might conclude that the former is closer to the ‘responsiveness’ statement we’ve started with. Regarding ‘time’, there was nothing in our initial problem definition about the absolute amount of time it’s taking the Marketers to respond. This might cause us to go back and rethink our initial problem statement: is it actually the amount of time we’re taking that’s the issue? In this case, because we don’t have time to communicate all of the contextual details of the problem, we’ll make the decision that it is row 28 and ‘Adaptability/Versatility’ which best corresponds to our improvement desire and so that’s the one we will write into the CAT.</p>
+<p>Next up, we need to find Matrix Parameter equivalents for the ‘no buy-in’ and ‘new tool learning curve’ issues preventing us from realising the desired responsiveness improvement. This looks like a more challenging job. Maybe ‘Support Capability’ (row 16) is a match? Or how about (thinking specifically about ‘learning curve’) ‘System Complexity’ (row 29) or ‘Amount Of Information’ (row 25). Or, shifting our focus to the intangible Parameters, maybe what’s stopping us has something to do with Autonomy (row 33) – i.e.&nbsp;everyone likes change, but very few like to be changed – or Competence (row 35). The latter is a phenomenon that affects all of us when it comes to learning new stuff – when we’ve never seen something before, there’s an almost inevitable first feeling that we are incompetent.</p>
+<p>Again, we could choose any and all of these Parameters in our analysis. We’d need more information about the context of the problem to make a fully representative match, but one thing we do know for certain is that when we’re dealing with people the J.P. Morgan aphorism about people making decisions for two reasons comes in to play. We might go so far as to say that every people conflict actually contains two conflicts: the good conflict and the real conflict. The ‘good’ conflict is the tangible part of the problem. In this problem, we might conclude that ‘System Complexity’ is the closest match to our situation. The ‘real’ conflict is all about the intangible parameters, and, as far as this situation is concerned, ‘Competence’ feels like a good match to make.</p>
+<p>If we decide to take both the ‘good’ and ‘real’ Parameters, it will mean the top two rows of our CAT will now look like this:</p>
+<p><strong>Figure 13 Top Two Rows Of The CAT for Responsiveness Versus Learning Curve Conflict</strong></p>
+<p>Important to note, perhaps at this stage is that if it turns out we’ve chosen our generic Parameters ‘incorrectly’, the worse that will happen is that we’ll generate some Inventive Principle solution directions that don’t generate answers we like. We can always come back to this stage and try some of the other Parameters that we have ignored this time around.</p>
+<p>Experience watching thousands of novice users, however, suggests that the problem is not a big one. This is because the Matrix has been designed to be ‘self-correcting’. What that means is that the uncertainty we might have in mapping from our specific to the generic is exactly the same uncertainty the SI research team faces every time they’re looking to add a new case study to the Matrix. Our strategy in such situations, if we’re not sure which box to put a case study into, is to put it in multiple different boxes. You’ll see how this works should you adopt an approach of looking up multiple boxes for a different problem and begin to observe the same Inventive Principles being selected from different boxes.</p>
+<p>Anyway, lets stick for the moment with the decision we’ve made here to look up two Parameter – one ‘tangible’ and one ‘intangible’ – on the worsening side of the Matrix.</p>
+<p>The next job is easy. We need to look up the relevant row-column intersection boxes in the Matrix. The next Figure shows the result of doing this for our current case study: Original Specific Problem</p>
+<p><strong>Figure 14 Completed Third Row Of The CAT for Responsiveness Versus Learning Curve Conflict</strong></p>
+<p>Now comes the exciting part of the process. Well, ‘exciting’ if the hard work of generating lots of solution clues is what you enjoy doing. Again, as far as this case study is concerned, the following solution clues are probably only meaningful in the context of the specific case study. If you happen to be interested in those specifics, let us know and we’ can provide more details. If you’re not interested in the specifics, but are interested in the process, the main things to note in this next solution-generation activity are, firstly, the idea of generating as many ‘clues’ as possible, and then, secondly, converging on an ‘actual’ solution. We’ll see this diverge-converge cycle in several other places in the Business Matrix and indeed when we’re working on any kind of complex problem. As far as this case study is concerned, we’ve deployed our standard heuristic of generating ‘at least five’ clues for each of the Inventive Principles suggested to us by the Matrix. Which means 45+ things written down in the fourth row of the CAT:</p>
+<p><strong>Figure 15 Completed Fourth Row Of The CAT for Responsiveness Versus Learning Curve Conflict</strong></p>
+<p>Generating as many ‘clues’ as possible (‘diverge until it hurts’) during this phase of the process is largely to ensure an emphasis on quantity of ideas as opposed to quality. Quantity necessarily comes first, quality comes later. Once we’ve done the divergent ‘quantity’ job, the final job, and the final row of the CAT is where we think about quality and home in on our ‘actual’ solution. This convergent job is largely about clustering ideas and themes and combining ‘partial’ ideas into something that offers us a step-change advance on the conflict. Or, better yet, eliminates the conflict altogether. Again, only the specifics of your own context and your own problem will allow you to know whether this aim has been achieved. If it hasn’t, then check out the last section of this chapter, ‘Around The Loop Again’. Meanwhile, as far as a close-out for this case study is concerned, Figure 16 illustrates our final ‘convergence’ work and the much smaller range of answers we proposed to our client:</p>
+<p><strong>Figure 16 Converging On The ‘Solution’ To The Responsiveness Versus Learning Curve Conflict</strong></p>
+</section>
+<section id="physical-contradictions" class="level2">
+<h2 class="anchored" data-anchor-id="physical-contradictions">Physical Contradictions</h2>
+<p>Conflicts – the tension between two different attributes within a system – are the primary working medium of the Business Matrix, but they are not the only type of trade-off mechanism that the Matrix needs to be able to deal with. The second type is what the TRIZ world refers to as ‘physical contradictions’. These are the situations where the tension lies within a single parameter: we want the enterprise to be ‘big and small’. We want big batch sizes and small batch sizes. We want to centralise and de-centralise. Physical contradictions are present every time we find ourselves trying to optimize the value of a single parameter. What’s the optimum level of risk? Optimum interest rate? Optimum range of services? Optimum amount of information we should give to employees? Optimum class size? All important questions to think about in an Operational Excellence context. And consequently an awful lot of attention gets paid to establishing what these optimum values are. Lots of hard work, that is all nugatory when we consider that there’s no such thing as an optimum anything in a complex world. Optimum values depend on local context. Sometimes the optimum class size is one; sometimes it’s a hundred. There can never be a single, universal, unchanging optimum. Any attempt to find one is the opposite of innovation-thinking. In innovation thinking, we want the best of both worlds, and therefore, it’s a good idea to identify where we are trying to optimize a parameter and instead of then doing the optimization calculations, formulate it as a physical contradiction.</p>
+<p>A big reason for wanting to do this is – another big finding from our research over the last twenty years – whatever your contradiction turns out to be, someone out there has already found a way of solving it. Every physical contradiction we can find – same as every conflict pair – is an innovation opportunity. Physical contradictions are everywhere. We can see them most clearly when we encounter graphs like this:</p>
+<p><strong>Figure 17 Graphical Representation Of A ‘Physical Contradiction’</strong></p>
+<p>Having identified a physical contradiction, when we try to tap in to the breakthrough solutions of others using the Business Matrix, we quickly encounter a problem: look up the problem, ’I want to give customers lots of information (improving feature) and little information (thing that’s stopping me) and we encounter an empty box. Indeed the whole diagonal line of boxes, from the top left to the bottom right of the Matrix is full of empty boxes. Clearly, this part of the Matrix tool is not going to help us when we have encountered a Physical Contradiction.</p>
+<p>Without wishing to put a damper on things, when we look at how those before us have successfully solved their versions of our Physical Contradiction, we’ll see they used the exact same range of 40 Inventive Principles we’ve already encountered when we were looking at the range of solution strategies for solving conflicts. What we’re missing, so far, for Physical Contradictions is a means of prioritising which of the 40 are most likely to help in our current context. This is the next question we need to answer…</p>
+</section>
+<section id="separation-strategies" class="level2">
+<h2 class="anchored" data-anchor-id="separation-strategies">Separation Strategies</h2>
+<p>The key to solving Physical Contradictions involves identification of contextual conditions that allow us to separate the various different ‘ideal’ values of the Parameter under consideration. Take the idea of class size in schools: the ideal class-size when the teacher is tutoring a student struggling to grasp a context is ‘one’. On the other hand, if its time for band practice, the ideal size is likely to be ‘the whole band’. Once I understand the contextual difference between these different situations, I can ‘solve’ my Physical Contradiction by separating them. When I have a struggling student, I have a class size of one; when I’m rehearsing the orchestra, I have a class size of 100. In this case, I separate the two contradicting requirements of big-class and small-class at different times.</p>
+<p>In this latest evolution of the Physical Contradiction resolving story (Reference 19), there are three main strategies available, each one involving a different type of separation strategy: separation in space, separation in time and separation between interfaces. As such, the strategies mimic one of the pillars of TRIZ in that the Space-Time-Interface theme occurs throughout the innovation and creativity stories. Each strategy benefits from some in-depth thinking about what attributes might be amenable to separation before we allow ourselves to transition to the Inventive Principles and a solution-generation mode of thinking.</p>
+<p>Here’s how that in-depth thinking works: firstly we need to think about each of the contextual condition types and look for differences between where, when or how we desire one extreme of the contradicting parameter and where, when or how we desire the other extreme. If we are able to identify such conditions within a given category, then we know we are able to exploit a separation solution strategy consistent with the space, time or interface categories.</p>
+<p>On one level, looking for conditions that allow us to separate our contradictory requirement is all about looking for resources. As such, the resources may well be very specific to our particular situation. Using ‘band practice’, for example, as one of the conditions that allows us to separate the class-size contradiction is very specific to the education sector and would be very unlikely to be of assistance to a problem solver trying to solve a Physical Contradiction relating to the insurance industry. That said, having been on a resource-hunt with several thousand different client projects now, it has been possible to construct a Table of generic separation resource triggers. The current version of the Table is reproduced here:</p>
+<p><strong>Table 1: Physical Contradiction Separation Strategy Trigger List</strong></p>
+<p>Readers already familiar with TRIZ or our TrenDNA (Reference 20) work will recognise some of these resource clues. Included in the Separation by Interface row of the table is a ‘comprehensive’ (Reference 21) list of human emotions. These are all potential sources of contradiction resolution – e.g.&nbsp;tackling a contradiction like, ‘we want to give people bad news and we don’t want to give people bad news’ is potentially very solvable if we know the right emotion states to tap in to. Like not giving bad news when recipients are feeling anxious or desperate.</p>
+<p>More often than not, once we realise we have identified a condition that allows us to successfully solve our contradiction, we don’t need to go any further into the process. The trick to solving the problem was ‘merely’ identifying and unlocking the right separation resource. That said, in many cases, too, having found a separation resource still leaves us some way away from having an actionable solution.</p>
+<p>The Venn diagram illustrated in Figure 18 shows the means by which we might best make this final jump from separation strategy to Inventive Principle solution suggestions:</p>
+<p><strong>Figure 18 Translating Separation Strategy Into Inventive Principles</strong></p>
+<p>(readers will also find this diagram reproduced on the back of the accompanying fold-out sheet)</p>
+<p>The recommended method of using the diagram involves identifying which, if any, of the three separation strategies is possible (asking ‘can the contradictory requirements be separated in space?’, ‘can they be separated in time?’, ‘can they be separated by interface?’). For each strategy where the answer to this question is yes, that tells us which segment of the Venn diagram to look up the relevant Inventive Principles. Thus, for example, if we determine that we can separate our bad-news/no-bad-news contradiction in Time and by Interface, the Inventive Principles we should start to look at to help generate solution clues are 15, 34, 11, 36, 29 and 16.</p>
+<p>The sequence of the numbers in each segment of the diagram is important and relates to the relative frequency that each Inventive Principle has been used to solve that particular type of Physical Contradiction. Thus, for example, in the above example, Principle 15, Dynamics, is the most frequently used strategy; Principle 34, ‘Discard &amp; Recover’, is the second most frequently used, and so on. As with the Business Matrix itself, the overall idea when we allow ourselves to enter the solution-clue generation part of the process is to generate as many clues as possible for each Principle.</p>
+<p>Also worth noting regarding the structure of the diagram is that if we are unable to find solution clues that appear to resolve the contradiction in the segment we start with, we can then start shifting to other adjacent segments. Thus, in the bad-news contradiction, if Principles 15, 34, 11, 36, 29 and 16 don’t give us what we want, we might head next to the segment where Principles 10, 19, 21, 9, 18 and 20 are found (i.e.&nbsp;we know we can use Separation in Time as a solution strategy) or to the segment where Principles 24, 12, 23, 6, 32, 8, 38 and 39 are found (i.e.&nbsp;we also know we can use Separation by Interface as a solution strategy). Basically, as with most things in life, we persist until we get what we want.</p>
+<p>Eventually, of course, we’re going to end up looking at all 40 Inventive Principles. As with the conflict situations represented by boxes in the Business Matrix, it is always possible to simply use the 40 Principles as means of generating ideas for any type of conflict or contradiction problem. The Matrix and this physical contradiction table offer more systematic approaches (and thus efficient short-cuts) but they are not compulsory.</p>
+</section>
+<section id="physical-contradiction-template" class="level2">
+<h2 class="anchored" data-anchor-id="physical-contradiction-template">Physical Contradiction Template</h2>
+<p>Figure 19 illustrates how the latest Physical Contradiction thinking has been assembled into a template:</p>
+<p><strong>Figure 19 Physical Contradiction Template (PCT)</strong></p>
+<p>The left and right hand sides of the template will be familiar from the preceding discussion. The list of Space-Time-Interface resource triggers is printed on the left in order to help problem solvers to have a check-list to refer to. The Venn diagram on the right-hand side is for use once we’ve established which, if any, of the three available separation strategies might be relevant to our current situation.</p>
+<p>The centre portion of the PCT is the ‘new’ part. It is the bit where we will be filling in details as we progress our thinking on the Physical Contradiction problem at hand. Figure 20 zooms-in to look just at this centre portion of the template:</p>
+<p><strong>Figure 20 Physical Contradiction Template (PCT) – Centre Portion</strong></p>
+<p>Per convention, we start at the top of the PCT. The first thing we fill-in is the parameter relating to our chosen Physical Contradiction. Line two then requires us to define the two extreme ends of the Contradiction – ‘we want high interest rates and low interest rates’ for example. After this, we get to the real heart of the template. The next three rows are where we’re looking to identify conditions whereby we might be able to separate our contradictory requirements. The three rows represent the Space, Time and Interface categories of separation strategy. If we can identify anything in any of the three categories, we record what we’ve found in the relevant boxes. Finally, when we’ve finished thinking our way through the three different separation categories, over on the right-hand side of the template is a final column labelled, ‘Y/N’. This is where we simply record whether we’ve been able to identify a candidate separation strategy in each of the three categories. Once we’ve done this job, we can look over to the Venn diagram, look-up the relevant Inventive Principles and record them in the bottom-right-hand corner of the Figure 19 full version of the PCT.</p>
+</section>
+<section id="physical-contradiction-case-study" class="level2">
+<h2 class="anchored" data-anchor-id="physical-contradiction-case-study">Physical Contradiction Case Study</h2>
+<p>To hopefully transform the abstract into something more concrete, we will conclude the Physical Contradiction solving discussion with a worked example. The problem with nearly all case studies is that they’re specific to a particular situation and unless a reader is fully aware of the surrounding context they can come across as overly generic. The best hope – we think – is to start with a case study that many readers are likely to be familiar with to some extent or other…</p>
+<p>…with that in mind, it is widely known these days that there is an almost universal problem with any innovation project, and that is the decisions that get made in the first days and weeks cost almost nothing in relation to the eventual cost of the project, but by the time those early decisions have been made, a very high percentage of the eventual project cost will have been committed. The range of this commitment is typically 70-90%. With that in mind, one might expect that organisations might devote more effort and more resources during those early days in order to help ensure that later spend can be reduced due to a lowered need for re-work and problem rectification. This is what one might expect, but somehow it rarely happens. Perhaps the reason ‘the designer casts the biggest shadow’ (Figure 21) problem is a Physical Contradiction, and when innovation teams start saying to their managers, ‘we need the upfront resources to be high and low’, their words are likely to result in nothing more than furrowed brows and further reinforcement that innovators are aliens from a different planet.</p>
+<p><strong>Figure 21 The Designer Casts The Biggest Shadow</strong></p>
+<p>Having now seen that this issue is indeed a Physical Contradiction, we can begin filling in the top portion of the PCT as follows:</p>
+<p><strong>Figure 22 Top Portion Of PCT For Upfront-Resource Contradiction</strong></p>
+<p>Now we can start thinking about whether we might be able to identify any resources that might be brought to bear to help separate the contradictory ‘high’ and ‘low’ requirements. We start with separation in Space, where we need to think about where we want the two different ends of the contradiction.</p>
+<p>Looking at the Space category check-list on the left of the sheet, highlighted the Innovation Capability Maturity Model (ICMM) (Reference 22) trigger. This reminded us of the fact that it is really only ICMM Level 3 and above enterprises that actually understand what resource types are needed during the first ‘fuzzy-front-end’ days and weeks of a project. Putting more resource into this fuzzy-front end when teams don’t know what sort of questions they’re supposed to be asking and answering would simply be a waste of that resource and we’d be no better off than we would have been had we done what we usually do. Having found that there is a possible separation-in-Space possibility, we can put a ‘Y’ in the relevant column on the right of the template. (We could and probably should, by the way, continue to explore other separation in Space possibilities to draw up a more comprehensive list – everything we can find potentially helps us to solve our Contradiction.)</p>
+<p>For the sake of brevity, we will look next at the Time category check-list, the separation possibilities will come from thinking about when we want our high and low upfront resources. The most obvious connection is likely to come from the realisation that it is during Exploration work (i.e.&nbsp;working our what we don’t know) that large numbers of people could be useful to us. If the project is not doing Exploration – for example if it is a simple, ‘sustaining innovation’ project, then having a large team will not add value. So, again, we have identified that separation-in-Time is possible and hence can put another ‘Y’ in the relevant box.</p>
+<p>The third separation category option is Interface. Here we’re looking for all the other ‘if’ conditions that cause us to want our high or low upfront resource. The connection we picked up this time, using the check-list on the left of the template, is about Competence, and particularly the competence in the concept of Decision Flow (Reference 23). If the team is not familiar, then putting lots of upfront resource to bear on the project is a good idea. If the team is not familiar with Decision Flow, that additional resource would be wasted. Having found a separation-by-Interface possibility, we can add a third ‘Y’ to the right hand column.</p>
+<p>And now we’re ready to make the transition to our first set of Inventive Principles: Parameter:</p>
+<p><strong>Figure 23 Final PCT For Upfront-Resource Contradiction</strong></p>
+<p>Finding three potential separation strategies should immediately allow us to start conceptualising solution strategies to the high-low upfront resource contradiction. Teaching the team about Decision Flow for example, or bringing on board a collaboration partner with the requisite ICMM skills. Now we can start adding some additional solution clues as might be triggered by our list of Inventive Principles:</p>
+<p>Inventive Principle 2 – Taking Out</p>
+<ul>
+<li><p>Remove Gantt charts &amp; replace with monthly task map</p></li>
+<li><p>Ensure everyone has some ‘skin in the game’ (take out ‘passengers’)</p></li>
+<li><p>Remove hierarchy (let this emerge or create later)</p></li>
+<li><p>Remove vacations, overtime – reinforce that this is temporary ‘bootcamp’ situation</p></li>
+<li><p>Make visible and remove prior Assumptions</p></li>
+</ul>
+<p>Inventive Principle 35 – Parameter Change</p>
+<ul>
+<li>Virtual noticeboards</li>
+<li>Virtual ‘Vision Board’</li>
+<li>Virtual ‘what we don’t know’ board circulated around rest of organisation</li>
+<li>Virtual prototype (possible to expose to customers extremely quickly for early feedback?)</li>
+<li>‘Fuzzy-Front-End Team’ as a service?</li>
+</ul>
+<p>Inventive Principle 3 – Local Quality</p>
+<ul>
+<li><p>Allocate people according to different type of unknowns</p></li>
+<li><p>Noisy and quiet project ‘War Rooms’</p></li>
+<li><p>Different functions take lead on different days/weeks</p></li>
+<li><p>Establish which contradictions and assumptions are more important to be challenged than others</p></li>
+<li><p>Informal and Formal reviews</p></li>
+</ul>
+<p>Inventive Principle 5 – Merging</p>
+<ul>
+<li><p>Bring on board collaboration partners with requisite ICMM skills</p></li>
+<li><p>Bring in coaching consultants with requisite exploration skills</p></li>
+<li><p>Regular (daily) feedback meetings</p></li>
+<li><p>Co-located, cross-functional ‘Fuzzy-Front-End team’</p></li>
+<li><p>Invite ‘peripheral’ players to participate (virtually)</p></li>
+</ul>
+<p>Inventive Principle 37 – Relative Change</p>
+<ul>
+<li><p>Focus on changes in this project relative to previous equivalents</p></li>
+<li><p>Establish whether prevailing sector step-change pulse rate has changed</p></li>
+<li><p>Project ‘Contradictions Found’ noticeboard</p></li>
+<li><p>‘Unknowns Answered’ dashboard</p></li>
+<li><p>PanSensic Engagement/Morale/Trust/etc dashboards</p></li>
+<li><p>‘Sense Of Progress’ dashboard</p></li>
+</ul>
+<p>Inventive Principle 4 – Asymmetry</p>
+<ul>
+<li><p>Authority/voting-rights based on different levels of ‘skin in the game’</p></li>
+<li><p>Asymmetric day schedule – make use of knowledge that different times of day are better/worse for doing creative work, consolidation work, etc.</p></li>
+<li><p>‘Big problems first’</p></li>
+<li><p>‘Failure of the week’/biggest learning</p></li>
+<li><p>Red Team/Blue Team split (Red Team has 10% of resources and the job of trying to put Blue Team solution out of business – permission to be radical)</p></li>
+</ul>
+</section>
+<section id="trilemmas" class="level2">
+<h2 class="anchored" data-anchor-id="trilemmas">Trilemmas</h2>
+<p>So much for conflicts and physical contradictions. Both represent different types of dilemma. Anyone that’s spent any time picking up battle-scars in a real business setting will know that their world is full of ‘iron triangles’. Or trilemmas. Project managers, for example, have an expression which goes something like, ‘cost, quality, schedule: which two do you want?’ It’s easy, in other words, for any manager to ‘solve’ the conflict between cost and quality by compromising on schedule. Achieving all three together is nigh on impossible. Or at least it is when thinking about a situation with an Operational Excellence mindset. When we’re thinking in this way, we take account of our local context and work out which of the three elements of our trilemma are more important than others. If we look at theatre or film-making, for example, schedule dominates (no-one ever misses their ‘opening night’), costs are fixed and so quality is the thing that ‘has’ to be compromised. Sometimes the compromise will be bigger than others. So, to take an extreme example, film director Woody Allen can be seen to have produced some of the best and also some of the worst films in cinema history. But he never overspends and always delivers the film on time. Schools and universities are the same: term time is fixed, budgets are fixed and so quality of education given to students becomes the ‘variable’.</p>
+<p>Conversely, the aerospace and other industries where safety is paramount, aren’t able to compromise on quality and so, depending on the prevailing economic conditions either let costs escalate (usually military programmes, where schedule – i.e.&nbsp;defence of the nation – is vital) or schedules become ‘fluid’. We often see a similar set of outcome biases in the healthcare sector.</p>
+<p>So, what should we do in these kind of trilemma situation? One way of thinking says that we treat the trilemma as a pair of dilemmas: solve one, and then solve the second one. That’s certainly a valid approach. The other way is to make use of a template we’ve been using for a number of years now and colloquially call the ‘Bubble Map’. This template also solves another problem for us. And that’s the connection between conflicts and physical contradictions. Some (in the TRIZ world at least) will argue that the Physical Contradiction is the ‘ultimate’ problem definition. Others will argue that conflicts are more visible and therefore allow problem solvers to tap into more of the solutions of others. The Bubble Map tells us that conflicts and Physical Contradictions are directly analogous: if we have identified a conflict pair, we can always convert it into a Physical Contradiction. And if we’ve found a Physical Contradiction, we can always convert it into a conflict.</p>
+</section>
+<section id="the-conversion-process-works-like-this" class="level2">
+<h2 class="anchored" data-anchor-id="the-conversion-process-works-like-this">The conversion process works like this:</h2>
+<p>If we have identified a conflict pair, we convert to a physical contradiction by thinking about what is required in order to achieve the two parameters that make up the conflict.</p>
+<p>If we have identified a Physical Contradiction, we convert to a conflict pair by thinking about the ’ because’ reasons we want each of the two sides of the Contradiction.</p>
+<p>Let’s dig a little deeper with the Cost-Quality-Schedule iron-triangle introduced earlier:</p>
+<p>One Physical Contradiction we can configure says we want Cost to be ‘high and low’. We want it to be high because that helps ensure we get high Quality; we want it to be low because that helps ensure we minimise Schedule.</p>
+<p>Conversely, we can start with the conflict between Quality and Schedule, and state that high Quality requires Costs to be high, and low Quality requires Costs to be low.</p>
+<p>We can then rotate each of the three parameters such that they each can be expressed as the Physical Contradiction:</p>
+<p>We want Schedule to be long because that helps ensure we get high Quality; we want it to be short because that helps ensure we minimise Cost.</p>
+<p>We want Quality to be high because that helps ensure we get best (whole-life and safety) Cost; we want it to be low because that helps ensure we minimise Schedule.</p>
+<p>We could draw all three using the same basic Bubble Map elements like this:</p>
+<p><strong>Figure 24 The Cost-Quality-Schedule Iron Triangle Expressed As Three Bubble Maps</strong></p>
+<p>We could proceed to break the iron-triangle by tackling any one of these three starting definitions. Within each, we could solve the conflict or the Physical Contradiction. Or both. Or, we can recognise that each of the lines connecting a pair of Bubbles describes a conflict or contradiction. Solving any one of them may offer the potential to break the triangle; solving two almost inevitably does.</p>
+<p>But, have we really ‘solved’ the triangle? In some instances, depending on the three parameters that make up the trilemma, absolutely yes. In this particular Cost-Quality-Schedule trilemma, all three issues will still be present when we’ve finished. Our hope in ‘solving’ the conflicts and contradictions here is that we make a step-change in the right direction.</p>
+<p>‘Right direction’ is a more difficult concept. Except in TRIZ, we know that all successful systems evolve in the same basic direction to the same end destination: things will be Free, Perfect and Now. This is what TRIZ defines as the ‘Ideal Final Result’ (IFR). It’s intended as a theoretical compass heading rather than a tangible business goal, but that said, organisations like Google and other ‘virtual’ service providers appear to live the philosophy of this IFR end-state in that most of their ‘customers’ will never give the Company any tangible money, and will still receive a ‘perfect’ service delivered instantaneously – think, for example, about how rarely your use of the Google search engine rarely goes beyond the first page of hits these days, and how it reminds us every time we conduct a search that it has found several million hits in a tiny fraction of a second.</p>
+<p>‘Free, Perfect, Now’ is the evolutionary end state of the Cost-Quality-Schedule iron-triangle. And every time we ‘solve’ a conflict or contradiction between the three parameters we make a step-changing jump in the direction of that end-state. In that sense, it perhaps hints at something we might usefully add to our Bubble Map…</p>
+</section>
+<section id="bubble-map-template" class="level2">
+<h2 class="anchored" data-anchor-id="bubble-map-template">‘Bubble-Map’ Template</h2>
+<p>…Figure 25 illustrates the generic version of the Bubble Map, integrating a new bubble on the left hand side to represent the ‘missing’ connection to the Ideal Outcome state. The main idea behind including this bubble is to encourage users to think about their overall compass heading. Less obviously, what it also does is offers up two more conflict solving opportunities such that if the four relating to the four bubbles on the right-hand side of the Map ‘cannot’ be solved, two back-ups are on hand to try: one between Conflict Parameter 1 and the Ideal Outcome; and the other between Conflict Parameter 2 and the Ideal Outcome.</p>
+<p><strong>Figure 25 Bubble Map Template</strong></p>
+<p>If you examine any of the work-books of any of the SI team members, you’ll see Bubble Maps drawn everywhere. The human brain has a very strong desire to jump as quickly as possible out of problem definition mode and into solution generation, and this is almost always a mistake. The large majority of innovation attempts fail on day one because the team has jumped to an erroneous conclusion about what the problem to be solved is. If nothing else, the Bubble Map is designed to trigger some tough problem definition thinking before we allow ourselves a release into the (usually much more fun) world of solution generation. The greater the struggle to make sense of the Map (or Maps), the more likely it is that when we emerge through the other end of the struggle we’re much clearer on what needs to be done than if we’d simply made a few assumptions about what the real problem to be solved was and jumped semi-randomly into solution generation mode.</p>
+<p>As with most things, the best way to bring the Bubble Map to life is to show a worked example. Interested readers will no doubt find several dozen such case studies in the archives of the Systematic Innovation e-zine (References 24, 25, and 26 offer three by way of a starter). Here’s one to that allows readers to see the story all in one place:</p>
+</section>
+<section id="trilemmabubble-map-case-study" class="level2">
+<h2 class="anchored" data-anchor-id="trilemmabubble-map-case-study">Trilemma/Bubble-Map Case Study</h2>
+<p>This case follows a statement made during a client session that we thought ‘Getting To Plan B’ (Reference 27) was one of the best business books of the last decade. We were approached during one of the coffee breaks by one of the team members. He didn’t look happy. The gist of his unhappiness was that our suggestion was likely to adversely affect the morale of his team. ‘If we’re not all bought in to the project,’ he said, ‘it will all collapse around us. We need to know everyone is aligned and heading in the right direction, not looking around for excuses or diversions.’</p>
+<p>It sounded like we’d found an interesting contradiction. We could see his point, but we could also see that Mullins and Komisar, the authors of ‘Getting To Plan B’ had built their hypothesis on some pretty solid foundations. Namely, that in a complex world, there’s an awful lot that can’t be known at the start of the project, and thus it is highly advisable to allow for course corrections as and when new information emerges during the course of filling in the unknowns.</p>
+<p>The contradiction seemed to look something like the picture reproduced in Figure 26:</p>
+<p><strong>Figure 26 We Want A Plan B and We Don’t Want A Plan B Contradiction Map</strong></p>
+<p>Having constructed the picture, we reminded ourselves – with no little irony as it turns out – that another favourite management text book of ours, ‘Scuttle Your Ships Before Advancing’ (Reference 28) was in complete alignment with the words of my irate client team member.</p>
+<p>The titular section of the book is built around the story of famed explorer Hernando Cortez. He landed on the shores of Vera Cruz, Mexico in 1519 and wanted his army to conquer the land for Spain. Immediately upon landing it looked like Cortez faced an uphill battle; an aggressive enemy, brutal disease and scarce resources. As they marched inland to do battle, Cortez ordered one of his lieutenant’s back to the beach with a single instruction: “burn our boats.”</p>
+<p>It was a brave way to make sure the army kept their eye on the goal. Burning boats was a really excellent means of eliminating a Plan B retreat.</p>
+</section>
+<section id="so-which-is-the-right-strategy" class="level2">
+<h2 class="anchored" data-anchor-id="so-which-is-the-right-strategy">So which is the right strategy?</h2>
+<p>The Contradiction Map, of course, makes it clear that the answer is ‘it depends’. Or rather that, ideally, we want the best of both worlds. Be totally aligned with Plan A, and have a Plan B. Figure 27 illustrates the results of mapping the Figure 26 problem onto the Matrix+ contradiction wizard – a piece of software that simultaneously looks up all six of the conflicts and contradictions contained in the Bubble Map.</p>
+<p><strong>Figure 27 Ranked Inventive Principle Suggestions For Solving The Plan-B/No-Plan-B Contradiction</strong></p>
+<p>Several of the Principles reminded us of an experiment we ran a couple of times during our time working in the aerospace industry. A typical ‘project’ in that world will usually require around a hundred engineers during the initial exploration and design phases of the programme schedule. We decided to place 96 of these hundred engineers into a ‘Blue’ team and the other 4 into a ‘Red’ team. Then gave both the exact same project brief. By rights, the Red team had absolutely zero chance of delivering a sensible design outcome. They were, in effect, our Plan B. Since they had no chance of successfully completing their brief using the established practices and protocols, they would have to break a few rules and try to find better ways of doing things. Their lack of numbers meant that this search for better ways had to fundamentally look for radical step-change solutions.</p>
+<p>Both times we ran the experiment, Red Team won. Not that the competition with Blue Team was quite taken that far. The whole idea was to combine the best of both teams: Red found the step changes; Blue delivered the detail. Plan B was effectively built in to the asymmetric team segmentation structure.</p>
+<p>I can imagine it’s a strategy that would work in some contexts and not others. I haven’t, for example, found a client willing to live through an equivalent Red/Blue experiment in the last five years. Most likely because the members of Red team need some relatively rare properties in terms of things like resilience and adaptability. Today we might think of them as ‘anti-fragile’. People, in other words, who know the difference between burning boats and burning bridges.</p>
+<p>So what about some of the other perhaps less radical strategies prompted by the Inventive Principles suggested by the Matrix?</p>
+<p>Principle 19, ‘Periodic Action’, perhaps suggests the slightly less radical idea of periodically switching between Plans at different periods during a project. Maybe having a Plan B Day once a month, for example.</p>
+<p>Principle 13, The Other Way Around, could be interpreted as, instead of having one Plan, have lots of Plans with a team responsible for running each. Every team has their ‘Plan A’ and every other team has their version of Plan B. Or, another way or interpreting the Principle 13 provocation would be to initially at least, encourage teams to find as many Plans as they can during an exploration phase aimed at cataloguing and answering the unknowns, and only after that catalogue has been whittled down to a meaningful level of convergence should there be any kind of definition of a boat-burning Plan A. Or, yet another interpretation, organisations like W L Gore don’t rely on a single person to determine what Plan A is, instead they rely on everyone making their own judgement about whether a project is heading in the right direction or not by voting with their feet whether to stay with a project or not.</p>
+<p>Principle 28 probably works best in its ‘Another Sense’ context, suggesting in that context something like using another means of getting people into the burned boats level of motivation that doesn’t blind them to the need for exploration of alternatives. Not so fashionable in the last few years, but I know many companies have had success in this direction when they offered project team members a stake in the benefits.</p>
+<p>Principle 2, Taking Out, or ‘Separation’ is probably easiest to connect to the idea of taking out any idea of a definitive, boats-burned Plan A until such times as all of the necessary exploration has been completed and the unknowns turned into knowns. This still leaves projects open to the uncertainties of the unknown-unknowns of course, in which case the best thing to ‘Take Out’ is probably time. Fail fast, fail forward being an often relevant strategy when the industry pulse rate is high. Far better to make a Plan A relating to creating a general ability to be able to make rapid iterations than to try and home in on a single all-eggs-in-one-basket project plan. This in effect takes the whole No-Plan-B to a meta level: creating a Plan A to become the world’s best detergent manufacturer is probably going to be out-survived by a Plan A to become the world’s best ‘clean clothes’ business.</p>
+<p>Principle 1, Segmentation, offers up a whole series of different segmentation strategies. Segmenting Plan design according to ICMM Level for example, in a special ‘Learning &amp; Innovation’ function or as part of the Efficiency Engine of the enterprise. It could also be segmented according to the psychometric make-up of the project team, the level of risk of the project, or whether the project is intended to deliver a sustaining, radical or disruptive outcome.</p>
+<p>We could continue, but hopefully the intended point is already well made. Successful innovation attempts derive from formulating good questions and ‘to have a Plan B or not have a Plan B’ appears to us to be one of them. If only because it forces people to re-train their usually inappropriate innovation instincts. No-one likes burning boats, but sometimes it’s the right thing to do. The key is knowing when. And knowing what the difference between a boat and a bridge is.</p>
+</section>
+<section id="problem-to-solution-transition-strategies" class="level2">
+<h2 class="anchored" data-anchor-id="problem-to-solution-transition-strategies">Problem-To-Solution Transition Strategies</h2>
+<section id="connecting-specific-problems-to-the-parameters" class="level3">
+<h3 class="anchored" data-anchor-id="connecting-specific-problems-to-the-parameters">1. Connecting Specific Problems to the Parameters</h3>
+<p>A problem many users of the Matrix (including many with considerable prior exposure) experience is trying to connect the specific words of their problem situation to the generic descriptions offered by the (now) 45 generic Parameters. To ease this problem, a list of synonyms and equivalent meanings has been included in the descriptions provided for each of the Parameters.</p>
+<p>Other means of linking of the more obtuse or obscure problems to the Matrix can be found in the final ‘Into The Future’ section of the book, or by using the Contradiction Finder tool at the www.systematic-innovation.com website.</p>
+</section>
+<section id="principle-hierarchies" class="level3">
+<h3 class="anchored" data-anchor-id="principle-hierarchies">2. Principle Hierarchies</h3>
+<p>In some situations it is not possible to identify what is getting worse, what’s preventing and improvement to a system, or pairs of conflicting Parameters can’t be found. For people in one of these quandaries, or for those that would simply rather prefer to get straight to the idea generation stage, the new Matrix has included a list of ‘most likely’ Inventive Principles that have been seen to help improve each of the 45 Parameters. If you know what you would like to improve about a current object or system, Business Matrix 3.0 offers an indication of the most likely Inventive Principles to help make the improvement without having to worry about what it is that is getting worse.</p>
+<p>This data is provided in the sections marked ‘Inventive Principles that should always be considered for problems where we wish to improve this parameter’ and ‘averaged list of other Principles that should be considered where we wish to improve this parameter (decreasing order of frequency)’ for each of the 45 Parameters. The difference between the two is that the latter comes from the frequency with which the various Principles have been used by others to give step-change advance solutions to a given problem, while the former emerges from expert panel sessions to identify those Principles that consistently gave the best step-changes.</p>
+</section>
+<section id="principle-combination-strategies" class="level3">
+<h3 class="anchored" data-anchor-id="principle-combination-strategies">3. Principle Combination Strategies</h3>
+<p>Evidence clearly correlates the strength of a solution to the number of Inventive Principles that have been used to generate it. Two strategies for using the Principles most effectively in combination with one another are described in our recently launched ‘TRIZmeta’ card game. The main one involves the use of combining solution clues derived from the use of individual Principles.</p>
+</section>
+</section>
+<section id="getting-the-best-out-of-the-contradiction-matrix" class="level2">
+<h2 class="anchored" data-anchor-id="getting-the-best-out-of-the-contradiction-matrix">Getting The Best Out Of The Contradiction Matrix</h2>
+<p>In light of the publication of the new version of the Business Matrix, it felt like a good time to review different ways of using the various different Contradiction Matrix tools. We’ve had twenty-five years of using the various different evolutions of the Matrix, teaching others, and watching people working on real problems using it. Over that time, we’ve tried or noticed many different strategies and methods. Some work better than others, but when we step back from all of the variants, three strategies stand out as more effective than others:</p>
+<p>Route 1: Finding ‘The Right’ Box</p>
+<p>Route 2: ‘All Possible Boxes’</p>
+<p>Route 3: 40 Inventive Principles</p>
+</section>
+<section id="route-1-finding-the-right-box" class="level2">
+<h2 class="anchored" data-anchor-id="route-1-finding-the-right-box">Route 1: Finding The Right Box</h2>
+<p>This has become my own default method of using the Matrix. Mainly because, I think, the biggest advantage of this route is that it forces the user to spend as long as possible in ‘problem definition’ mode. The trick to getting the most out of using the Matrix this way is to spend time in the specific-to-generic translation:</p>
+<p><strong>Figure 28 Route 1 Time Focus</strong></p>
+<p>By only allowing yourself the possibility of choosing one improving parameter and only one worsening parameter, it forces you to really think about what precisely you’re trying to improve and what’s on the other side of the conflict.</p>
+<p>To take a typical example, many ‘specific’ problems involve cost. But, of course, there is no cost parameter in the (technical version of) Matrix, because, in effect, all 50 of the available parameters in the menu have a relationship with cost. What the list is in effect forcing the problem definer to think about is, ‘precisely what aspect of cost is it that you’re trying to improve?’ Is it material cost, for example (Production Cost). Or is it an inadequate durability cost (Support Cost)? Is it about reliability (Support Capability)? Or is the amount of time more important? By forcing yourself through this kind of thinking process, you’re giving yourself the best shot at ensuring you know exactly what the conflict you’re trying to solve is. And then, by implication, that the Inventive Principles the Matrix presents back to you after you’ve finally allowed to look in the relevant row and column intersection box, are all going to be meaningful and usable.</p>
+</section>
+<section id="route-2-all-possible-boxes" class="level2">
+<h2 class="anchored" data-anchor-id="route-2-all-possible-boxes">Route 2: All Possible Boxes</h2>
+<p>In many ways the opposite to the Route 1 strategy is the one that allows the user to choose as many of the Matrix parameters they think ‘might be’ relevant to their specific problem as they like. This effectively allows the user to spend a lot less time thinking about what the actual conflict they’re trying to solve is, and to get to the solution generation part of the process as quickly as possible.</p>
+<p>If the problem solver is using the paper version of the Matrix, the first downside of this Route 2 strategy is that it can get pretty tedious looking up lots of boxes in the Matrix. What will almost inevitably happen, however, when users do adopt this approach, is that they will quickly begin to notice the same Inventive Principles suggestions appearing in multiple different boxes. This is the ‘self-correcting’ nature of the Matrix coming to the fore. It happens because, turning the story around the other way, whenever the SI research team adds a new case study onto the Matrix, the strategy they use says, if we don’t know which specific box to put a given solution into, we’ll put the solution into multiple boxes.</p>
+<p>If you’re using the software version of the Matrix, of course, all of this ‘self-correction’ ranking of the Inventive Principle suggestions is done for you:</p>
+<p><strong>Figure 29 Route 2, ‘All Possible Boxes’ Matrix Strategy</strong></p>
+<p>The main downside of the Route 2 strategy is still to come, however, irrespective of whether you’ve been through the manual or automated Principle ranking task. And that is that some of the Principle suggestions will be quite difficult to connect to the problem you’re trying to tackle. In no small part this problem arises because you haven’t actually spent the time to really think about what your problem is. I’ve seen many occasions where teams have travelled this route, encountered a Principle suggestion that they have no idea how to connect to what they think their problem is, and have thus ignored it and moved on to the next Principle on the list. Whereas a later search of a knowledge database has revealed that many others have indeed used said Principle to derive a very elegant solution to what you eventually realise was your problem.</p>
+</section>
+<section id="route-3-40-inventive-principles" class="level2">
+<h2 class="anchored" data-anchor-id="route-3-40-inventive-principles">Route 3: 40 Inventive Principles</h2>
+<p>This is the route favoured by the Matrix-averse. On one level, their rationale is very logical: ‘if there are only 40 Inventive Principles, and this is a real problem we’re working on, why wouldn’t we examine all 40 of them?’ The most obvious advantage of this route is that it misses the first two steps of the process completely and allows users to get straight to the exciting idea generation part of the process.</p>
+<p>The downsides are, unfortunately, somewhat less obvious. As with Route 2, one issue is that the idea generation activity is less focused because no-one in the session has really had an opportunity to really think about what the problem being solved actually is. The more insidious disadvantage is that brainstorming through 40 Principles and doing it effectively is hard work. Or rather, ‘it should be’. Something I notice a lot with teams that track down Route 3 is a propensity to goof off when it comes to doing the hard work. I’ll hear comments like, ‘we already had that Principle’ when they see that one Principle appears similar to another (e.g.&nbsp;Principles 3 and 4 have a very clear overlap). A truly disciplined use of the 40 Principles would involve doing the opposite of trying to find excuses to not use a Principle – the key to successful use is looking for the parts of each Principle that don’t overlap with other ones. That’s a fairly counter-intuitive and therefore difficult mindset for people to get themselves into.</p>
+</section>
+<section id="which-route" class="level2">
+<h2 class="anchored" data-anchor-id="which-route">Which Route?</h2>
+<p>The existence of these three different Routes is perhaps indicative of a higher level contradiction. Should I use Route 1 or route 2 or 3 is ultimately the wrong question. We know it’s the wrong question because it has the word ‘or’ in it. If we were actually using the philosophy of the Contradiction tool, we’d do something to solve the contradiction. Which, in practical terms means knowing where, when and under what conditions the various options needs to be separated.</p>
+<p>That story, we believe, looks something like this:</p>
+<table class="table">
+<colgroup>
+<col style="width: 6%">
+<col style="width: 36%">
+<col style="width: 28%">
+<col style="width: 28%">
+</colgroup>
+<thead>
+<tr class="header">
+<th></th>
+<th>Advantages</th>
+<th>Disadvantages</th>
+<th>Where/When To Use</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>Route 1 The ‘Right Box’</td>
+<td>Forces rigorous problem definition; best opportunity that the Inventive Principle suggestions will connect to the problem at hand</td>
+<td>Difficult to get teams to want to devote sufficient time and effort to the ‘boring’ problem definition task; takes the ‘fun’ out of idea generation</td>
+<td>Use Route 1 before a brainstorming session rather than ‘live’ within the session.</td>
+</tr>
+<tr class="even">
+<td>Route 2 All Possible Boxes</td>
+<td>Very rapid transition between problem definition and solution generation; self-correcting nature of the Matrix will become apparent – helps to build confidence in the credibility of the tool</td>
+<td>Lack of focus on the ‘actual’ problem often means that the Inventive Principles suggested ‘don’t make sense’ and get ignored</td>
+<td>Novice users of the Matrix; workshop setting where it is helpful to demonstrate and work through the ‘whole’ contradiction solving process</td>
+</tr>
+<tr class="odd">
+<td>Route 3 40 Inventive Principles</td>
+<td>Eliminates most of the process; potential to be highly comprehensive in idea generation terms</td>
+<td>Too easy to ‘goof-off’ and not do the Principles justice; requires considerable persistence to do properly</td>
+<td>‘Quick &amp; dirty’ problem solving sessions; deep problems where there is time to conduct the ideation in several sessions rather than all in one session</td>
+</tr>
+</tbody>
+</table>
+
+
+</section>
+</section>
+
+</main> <!-- /main -->
+<script id="quarto-html-after-body" type="application/javascript">
+window.document.addEventListener("DOMContentLoaded", function (event) {
+  const toggleBodyColorMode = (bsSheetEl) => {
+    const mode = bsSheetEl.getAttribute("data-mode");
+    const bodyEl = window.document.querySelector("body");
+    if (mode === "dark") {
+      bodyEl.classList.add("quarto-dark");
+      bodyEl.classList.remove("quarto-light");
+    } else {
+      bodyEl.classList.add("quarto-light");
+      bodyEl.classList.remove("quarto-dark");
+    }
+  }
+  const toggleBodyColorPrimary = () => {
+    const bsSheetEl = window.document.querySelector("link#quarto-bootstrap");
+    if (bsSheetEl) {
+      toggleBodyColorMode(bsSheetEl);
+    }
+  }
+  toggleBodyColorPrimary();  
+  const icon = "";
+  const anchorJS = new window.AnchorJS();
+  anchorJS.options = {
+    placement: 'right',
+    icon: icon
+  };
+  anchorJS.add('.anchored');
+  const isCodeAnnotation = (el) => {
+    for (const clz of el.classList) {
+      if (clz.startsWith('code-annotation-')) {                     
+        return true;
+      }
+    }
+    return false;
+  }
+  const clipboard = new window.ClipboardJS('.code-copy-button', {
+    text: function(trigger) {
+      const codeEl = trigger.previousElementSibling.cloneNode(true);
+      for (const childEl of codeEl.children) {
+        if (isCodeAnnotation(childEl)) {
+          childEl.remove();
+        }
+      }
+      return codeEl.innerText;
+    }
+  });
+  clipboard.on('success', function(e) {
+    // button target
+    const button = e.trigger;
+    // don't keep focus
+    button.blur();
+    // flash "checked"
+    button.classList.add('code-copy-button-checked');
+    var currentTitle = button.getAttribute("title");
+    button.setAttribute("title", "Copied!");
+    let tooltip;
+    if (window.bootstrap) {
+      button.setAttribute("data-bs-toggle", "tooltip");
+      button.setAttribute("data-bs-placement", "left");
+      button.setAttribute("data-bs-title", "Copied!");
+      tooltip = new bootstrap.Tooltip(button, 
+        { trigger: "manual", 
+          customClass: "code-copy-button-tooltip",
+          offset: [0, -8]});
+      tooltip.show();    
+    }
+    setTimeout(function() {
+      if (tooltip) {
+        tooltip.hide();
+        button.removeAttribute("data-bs-title");
+        button.removeAttribute("data-bs-toggle");
+        button.removeAttribute("data-bs-placement");
+      }
+      button.setAttribute("title", currentTitle);
+      button.classList.remove('code-copy-button-checked');
+    }, 1000);
+    // clear code selection
+    e.clearSelection();
+  });
+  function tippyHover(el, contentFn) {
+    const config = {
+      allowHTML: true,
+      content: contentFn,
+      maxWidth: 500,
+      delay: 100,
+      arrow: false,
+      appendTo: function(el) {
+          return el.parentElement;
+      },
+      interactive: true,
+      interactiveBorder: 10,
+      theme: 'quarto',
+      placement: 'bottom-start'
+    };
+    window.tippy(el, config); 
+  }
+  const noterefs = window.document.querySelectorAll('a[role="doc-noteref"]');
+  for (var i=0; i<noterefs.length; i++) {
+    const ref = noterefs[i];
+    tippyHover(ref, function() {
+      // use id or data attribute instead here
+      let href = ref.getAttribute('data-footnote-href') || ref.getAttribute('href');
+      try { href = new URL(href).hash; } catch {}
+      const id = href.replace(/^#\/?/, "");
+      const note = window.document.getElementById(id);
+      return note.innerHTML;
+    });
+  }
+      let selectedAnnoteEl;
+      const selectorForAnnotation = ( cell, annotation) => {
+        let cellAttr = 'data-code-cell="' + cell + '"';
+        let lineAttr = 'data-code-annotation="' +  annotation + '"';
+        const selector = 'span[' + cellAttr + '][' + lineAttr + ']';
+        return selector;
+      }
+      const selectCodeLines = (annoteEl) => {
+        const doc = window.document;
+        const targetCell = annoteEl.getAttribute("data-target-cell");
+        const targetAnnotation = annoteEl.getAttribute("data-target-annotation");
+        const annoteSpan = window.document.querySelector(selectorForAnnotation(targetCell, targetAnnotation));
+        const lines = annoteSpan.getAttribute("data-code-lines").split(",");
+        const lineIds = lines.map((line) => {
+          return targetCell + "-" + line;
+        })
+        let top = null;
+        let height = null;
+        let parent = null;
+        if (lineIds.length > 0) {
+            //compute the position of the single el (top and bottom and make a div)
+            const el = window.document.getElementById(lineIds[0]);
+            top = el.offsetTop;
+            height = el.offsetHeight;
+            parent = el.parentElement.parentElement;
+          if (lineIds.length > 1) {
+            const lastEl = window.document.getElementById(lineIds[lineIds.length - 1]);
+            const bottom = lastEl.offsetTop + lastEl.offsetHeight;
+            height = bottom - top;
+          }
+          if (top !== null && height !== null && parent !== null) {
+            // cook up a div (if necessary) and position it 
+            let div = window.document.getElementById("code-annotation-line-highlight");
+            if (div === null) {
+              div = window.document.createElement("div");
+              div.setAttribute("id", "code-annotation-line-highlight");
+              div.style.position = 'absolute';
+              parent.appendChild(div);
+            }
+            div.style.top = top - 2 + "px";
+            div.style.height = height + 4 + "px";
+            let gutterDiv = window.document.getElementById("code-annotation-line-highlight-gutter");
+            if (gutterDiv === null) {
+              gutterDiv = window.document.createElement("div");
+              gutterDiv.setAttribute("id", "code-annotation-line-highlight-gutter");
+              gutterDiv.style.position = 'absolute';
+              const codeCell = window.document.getElementById(targetCell);
+              const gutter = codeCell.querySelector('.code-annotation-gutter');
+              gutter.appendChild(gutterDiv);
+            }
+            gutterDiv.style.top = top - 2 + "px";
+            gutterDiv.style.height = height + 4 + "px";
+          }
+          selectedAnnoteEl = annoteEl;
+        }
+      };
+      const unselectCodeLines = () => {
+        const elementsIds = ["code-annotation-line-highlight", "code-annotation-line-highlight-gutter"];
+        elementsIds.forEach((elId) => {
+          const div = window.document.getElementById(elId);
+          if (div) {
+            div.remove();
+          }
+        });
+        selectedAnnoteEl = undefined;
+      };
+      // Attach click handler to the DT
+      const annoteDls = window.document.querySelectorAll('dt[data-target-cell]');
+      for (const annoteDlNode of annoteDls) {
+        annoteDlNode.addEventListener('click', (event) => {
+          const clickedEl = event.target;
+          if (clickedEl !== selectedAnnoteEl) {
+            unselectCodeLines();
+            const activeEl = window.document.querySelector('dt[data-target-cell].code-annotation-active');
+            if (activeEl) {
+              activeEl.classList.remove('code-annotation-active');
+            }
+            selectCodeLines(clickedEl);
+            clickedEl.classList.add('code-annotation-active');
+          } else {
+            // Unselect the line
+            unselectCodeLines();
+            clickedEl.classList.remove('code-annotation-active');
+          }
+        });
+      }
+  const findCites = (el) => {
+    const parentEl = el.parentElement;
+    if (parentEl) {
+      const cites = parentEl.dataset.cites;
+      if (cites) {
+        return {
+          el,
+          cites: cites.split(' ')
+        };
+      } else {
+        return findCites(el.parentElement)
+      }
+    } else {
+      return undefined;
+    }
+  };
+  var bibliorefs = window.document.querySelectorAll('a[role="doc-biblioref"]');
+  for (var i=0; i<bibliorefs.length; i++) {
+    const ref = bibliorefs[i];
+    const citeInfo = findCites(ref);
+    if (citeInfo) {
+      tippyHover(citeInfo.el, function() {
+        var popup = window.document.createElement('div');
+        citeInfo.cites.forEach(function(cite) {
+          var citeDiv = window.document.createElement('div');
+          citeDiv.classList.add('hanging-indent');
+          citeDiv.classList.add('csl-entry');
+          var biblioDiv = window.document.getElementById('ref-' + cite);
+          if (biblioDiv) {
+            citeDiv.innerHTML = biblioDiv.innerHTML;
+          }
+          popup.appendChild(citeDiv);
+        });
+        return popup.innerHTML;
+      });
+    }
+  }
+});
+</script>
+</div> <!-- /content -->
+
+
+
+</body></html>
